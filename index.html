@@ -1,12 +1,121 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang='ru'>
   <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Седона</title>
+    <meta charset='utf-8'>
+      <title>HTML Academy: Седона</title>
+      <!-- Подключение стилей -->
   </head>
+  
   <body>
-
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">Профессиональный HTML и CSS, уровень 1</a>».</p>
-
+    <header class='header-page'>
+      <nav class='main-nav'>
+        <a class='nav__logo'>
+          <img class='nav__img' src='http://placehold.it/150x100'>
+        </a>
+        <ul class='nav__list'>
+          <li class='nav__item'><a class='nav__link' href='info.html'>ИНФОРМАЦИЯ</a></li>
+          <li class='nav__item'><a class='nav__link' href='media.html'>ФОТО И ВИДЕО</a></li>
+          <li class='nav__item'><a class='nav__link' href='map.html'>КАРТА ШТАТА</a></li>
+          <li class='nav__item'><a class='nav__link' href='hotels.html'>ГОСТИНИЦЫ</a></li>
+        </ul>
+      </nav>
+    </header>
+    
+    <main class='main-page'>
+      <section class='main-section'>
+        <h1 class='visually-hidden'>Седона</h1>
+        <img class='main-section__img' src='http://placehold.it/150x100'>
+        <b class='main-section__slogan'>СЕДОНА - НЕБОЛЬШОЙ ГОРОДОК В АРИЗОНЕ, ЗАСЛУЖИВАЮЩИЙ БОЛЬШЕГО!</b>
+        <p class='main-section__subtitle'>РАССМОТРИМ 5 ПРИЧИН, ПО КОТОРЫМ СЕДОНА КРУЧЕ, ЧЕМ ГРАНД КАНЬОН!</p>
+      </section>
+      
+      <section class='pros'>
+        <h2 class='visually-hidden'>Преимущества</h2>
+        <ul class='pros__list'>
+          <li class='pros__item'>
+            <h3 class='pros__caption'>НАСТОЯЩИЙ ГОРОДОК</h3>
+            <span class='pros__number'>- №1 -</span>
+            <p class='pros__cause'>СЕДОНА - НЕ АТТРАКЦИОН ДЛЯ ТУРИСТОВ, ТАМ ТЕЧЕТ СВОЯ ЖИЗНЬ</p>
+            <figure class='pros__pic'>
+              <img class='pros__img' src='http://placehold.it/150x100'>    
+            </figure>
+              <ul class='pros-detail__list'>
+                <li class='pros-detail__item'>
+                  <h4 class='pros-detail__caption'>ЖИЛЬЕ</h4>
+                  <p class='pros-detail__cause'>РЕКОМЕНДУЕМ ПОЖИТЬ В НАСТОЯЩЕМ МОТЕЛЕ, ВСЕ КАК В КИНО!</p>
+                  <figure class='pros-detail__pic'>
+                    <img class='pros-detail__icon' src='http://placehold.it/150x100'>
+                  </figure>
+                </li>
+                <li class='pros-detail__item'>
+                  <h4 class='pros-detail__item'>ЕДА</h4>
+                  <p class='pros-detail__cause'>ВСЕГДА ЗАКАЗЫВАЙТЕ ФИРМЕННЫЙ БУРГЕР, ВЫ НЕ РАЗОЧАРУЕТЕСЬ!</p>
+                  <figure class='pros-detail__pic'>
+                    <img class='pros-detail__icon' src='http://placehold.it/150x100'>
+                  </figure>
+                </li>
+                <li class='pros-detail__item'>
+                  <h4 class='pros-detail__caption'>СУВЕНИРЫ</h4>
+                  <p class='pros-detail__cause'>НЕ ТОЛЬКО КИТАЙСКОГО, НО И МЕСТНОГО ПРОИЗВОДСТВА!</p>
+                  <figure class='pros-detail__pic'>
+                    <img class='pros-detail__icon' src='http://placehold.it/150x100'>
+                  </figure>
+                </li>
+              </ul>
+          <li class='pros__item'>  
+            <h3 class='pros__caption'>ТАМ ЕСТЬ МОСТ ДЬЯВОЛА</h3>
+            <span class='pros__number'>- №2 -</span>
+            <p class='pros__cause'>ДА, ПО НЕМУ МОЖНО ПРОЙТИ! ЕСЛИ ВЫ, КОНЕЧНО, ОСМЕЛИТЕСЬ</p>
+            <figure class='pros__pic'>
+              <img class='pros__img' src="http://placehold.it/150x100">    
+            </figure>
+          </li> 
+          <li class='pros-next__item'>
+            <h3 class='pros-next__caption'>НЕБОЛЬШАЯ ПЛОЩАДЬ</h3>
+            <span class='pros-next__number'>- №3 -</span>
+            <p class='pros-next__cause'>ВСЕ ДОСТОПРИМЕЧАТЕЛЬНОСТИ НАХОДЯТСЯ ОЧЕНЬ БЛИЗКО</p>
+          </li>
+          <li class='pros-next__item'>
+            <h3 class='pros-next__caption'>КРАСИВАЯ ДОРОГА</h3>
+            <span class='pros-next__number'>- №4 -</span>
+            <p class='pros-next__cause'>ЕХАТЬ В СЕДОНУ ИЗ ЛАС-ВЕГАСА СОВСЕМ НЕ СКУЧНО!</p>
+          </li>
+          <li class='pros-next__item'>
+            <h3 class='pros-next__caption'>МАЛО ТУРИСТОВ</h3>
+            <span class='pros-next__number'>- №5 -</span>
+            <p class='pros-next__cause'>БОЛЬШИНСТВО ЕДЕТ В ГРАНД КАНЬОН И ТОЛПИТСЯ ТАМ</p>
+          </li>
+        </ul>
+      </section>
+      
+      <section class='map'>
+        <h2 class='visually__hidden'>Карта</h2>
+        <b class='map__query'>ЗАИНТЕРЕСОВАЛИСЬ?</b>
+        <p class='map__request'>УКАЖИТЕ ПРЕДПОЛАГАЕМЫЕ ДАТЫ ПОЕЗДКИ, И МЫ ПОКАЖЕМ ВАМ ЛУЧШИЕ ПРЕДЛОЖЕНИЯ ГОСТИНИЦ В СЕДОНЕ</p>
+        <button class='button__search'>ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</button>
+        <!-- Место для формы -->
+        <!-- Место для карты -->
+      </section>
+    </main>
+    
+    <footer class='footer-page'>
+      <div class='footer-page__caption'>
+        <ul class='page__list'>
+          <li class='page__item'>#VISITSEDONA</li>
+        </ul>
+      </div> 
+      
+      <div class='footer-socials'>
+        <ul class='socials__list'>
+          <li class='socials__item'><a class='socials__button'>Твиттер</a></li>
+          <li class='socials__item'><a class='socials__button'>Фэйсбук</a></li>
+          <li class='socials__item'><a class='socials__button'>Ютуб</a></li>
+        </ul>
+      </div> 
+      
+      <div class='footer-copyright'>
+        <img class='copyright__img' src='http://placehold.it/100x50'>
+      </div>
+    </footer>
   </body>
 </html>
