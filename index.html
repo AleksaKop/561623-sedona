@@ -3,27 +3,27 @@
   <head>
     <meta charset='utf-8'>
       <title>HTML Academy: Седона</title>
-      <!-- Подключение стилей -->
+      <link rel='stylesheet' href='main.css'>
   </head>
   
   <body>
     <header class='header-page'>
       <nav class='main-nav'>
         <a class='main-nav__logo'>
-          <img src='http://placehold.it/150x100'>
+          <img src='img/logo.png'>
         </a>
         <ul class='main-nav__list'>
           <li class='main-nav__item'>
-            <a class='main-nav__link' href='info.html'>информация</a>
+            <a class='main-nav__link' href='info.html'>Иформация</a>
           </li>
           <li class='main-nav__item'>
-            <a class='main-nav__link' href='media.html'>фото и видео</a>
+            <a class='main-nav__link' href='media.html'>Фото и видео</a>
           </li>
           <li class='main-nav__item'>
-            <a class='main-nav__link' href='map.html'>карта</a>
+            <a class='main-nav__link' href='map.html'>Карта</a>
           </li>
           <li class='main-nav__item'>
-            <a class='main-nav__link' href='hotels.html'>гостиницы</a>
+            <a class='main-nav__link' href='hotels.html'>Гостиницы</a>
           </li>
         </ul>
       </nav>
@@ -32,7 +32,7 @@
     <main class='main-page'>
       <section class='main-section'>
         <h1 class='visually-hidden'>Седона</h1>
-        <img class='main-section__img' src='http://placehold.it/150x100'>
+        <img src='img/welcome.png'>
         <h2 class='main-section__slogan'>Седона - небольшой городок в Аризоне, заслуживающий большего!</h2>
         <p class='main-section__text'>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
       </section>
@@ -45,34 +45,28 @@
             <span class='plus__number'>- №1 -</span>
             <p class='plus__cause'>Седона - не аттракцион для туристов, там течет своя жизнь</p>
             <figure class='plus__pic'>
-              <img src='http://placehold.it/150x100'>    
+              <img src='img/main_foto1.jpg' alt='Город'>    
             </figure>
-              <ul class='plus-detail__list'>
-                <li class='plus-detail__item'>
-                  <h4 class='plus-detail__title'>Жилье</h4>
-                  <p class='plus-detail__cause'>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
-                  <figure class='plus-detail__pic'>
-                    <img class='plus-detail__icon' src='http://placehold.it/150x100'>
-                  </figure>
+              <ul class='plus__detail-list'>
+                <li class='plus__detail-item'>
+                  <img src='img/icon-1.svg'>
+                  <h4 class='plus__detail-title'>Жилье</h4>
+                  <p class='plus__detail-cause'>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
                 </li>
-                <li class='plus-detail__item'>
-                  <h4 class='plus-detail__title'>Еда</h4>
-                  <p class='plus-detail__cause'>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
-                  <figure class='plus-detail__pic'>
-                    <img class='plus-detail__icon' src='http://placehold.it/150x100'>
-                  </figure>
+                <li class='plus__detail-item'>
+                  <img src='img/icon-2.svg'>
+                  <h4 class='plus__detail-title'>Еда</h4>
+                  <p class='plus__detail-cause'>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
                 </li>
-                <li class='plus-detail__item'>
-                  <h4 class='plus-detail__title'>Сувениры</h4>
-                  <p class='plus-detail__cause'>Не только китайского, но и местного производства!</p>
-                  <figure class='plus-detail__pic'>
-                    <img src='http://placehold.it/150x100'>
-                  </figure>
+                <li class='plus__detail-item'>
+                  <img src='img/icon-3.svg'>
+                  <h4 class='plus__detail-title'>Сувениры</h4>
+                  <p class='plus__detail-cause'>Не только китайского, но и местного производства!</p>
                 </li>
               </ul>
           <li class='plus__item'>
             <figure class='plus__pic'>
-              <img src="http://placehold.it/150x100">    
+              <img src='img/main_foto2.jpg' alt='Мост дьявола'>    
             </figure>  
             <h3 class='plus__title'>Там есть мост дьявола</h3>
             <span class='plus__number'>- №2 -</span>
@@ -96,14 +90,39 @@
         </ul>
       </section>
       
-      <section class='map'>
-        <h2 class='visually__hidden'>Карта</h2>
-        <h3 class='map__title'>Заинтересовались?</h3>
-        <p class='map__request'>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-        <button class='map__button'>Поиск гостиницы в Седоне</button>
-        <!-- Место для формы -->
-        <!-- Место для карты -->
-      </section>
+      <section class='seach-hotels'>
+        <h2 class='visually__hidden'>Поиск гостиницы в Седоне</h2>
+        <h3 class='seach-hotels__title'>Заинтересовались?</h3>
+        <p class='seach-hotels__request'>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+        <button class='seach-hotels__button'>Поиск гостиницы в Седоне</button>
+        <form class='search-hotels__form' method='post' action='https://echo.htmlacademy.ru'>
+          <fieldset class='seach-hotels__section'>
+            <legend class='visually__hidden'>Поиск</legend>
+            <p>
+              <label for='arrial__date'> Дата заезда:</label>
+              <input id='arrial__date' type='date' name='date'>
+            </p>
+            <p>
+              <label for='departure__date'> Дата выезда:</label>
+              <input id='departure__date' type='date' name='date'>
+            </p>
+            <p>
+              <label for='adult__amount'> Взрослые:</label>
+              <button class="adult__toggle adult__toggle--minus">-</button>
+              <input type='text' placeholder='2'>
+              <button class="adult__toggle adult__toggle--plus">+</button>
+              <label for='children__amount'> Дети:</label> 
+              <button class='children__toggle children__toggle--minus'>-</button>
+              <input type='text' placeholder='0'>
+              <button class='children__toggle children__toggle--plus'>+</button>
+            </p>
+            <p>
+              <button type="submit">Найти</button> 
+            </p>
+          </fieldset>
+        </form>
+        <img src='img/map.png' width='1200' height='473'>
+      </section>    
     </main>
     
     <footer class='footer-page'>
@@ -113,15 +132,27 @@
       
       <div class='socials'>
         <ul class='socials__list'>
-          <li class='socials__item'><a class='socials__button'>Твиттер</a></li>
-          <li class='socials__item'><a class='socials__button'>Фэйсбук</a></li>
-          <li class='socials__item'><a class='socials__button'>Ютуб</a></li>
+          <li class='socials__item'>
+            <a class='socials__button' href='#twitter' aria-label='Твиттер'>
+              <img src='img/twitter.svg'>
+            </a>
+          </li>
+          <li class='socials__item'>
+            <a class='socials__button' href='#facebook' aria-label='Фэйсбук'>
+              <img src='img/fb-icon.svg'>
+            </a>
+          </li>
+          <li class='socials__item'>
+            <a class='socials__button' href='#youtube'aria-label='Ютуб'>
+              <img src='img/youtube.svg'>
+            </a>
+          </li>
         </ul>
-      </div> 
+      </div>  
       
       <div class='copyright'>
         <b class='copyright__text'>website by</b>
-        <img src='http://placehold.it/100x50'>
+        <img src='img/logo-htmlacademy.svg' width='115' height='41'>
       </div>
     </footer>
   </body>
