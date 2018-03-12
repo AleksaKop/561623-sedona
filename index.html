@@ -8,9 +8,9 @@
   
   <body>
     <header class='header-page'>
-      <nav class='main-nav'>
-        <a class='main-nav__logo'>
-          <img src='img/logo.png'>
+      <nav class='main-nav' aria-label='Навигация по сайту'>
+        <a class='main-nav__logo' aria-label='Логотип'>
+          <img src='img/logo.png' alt='Логотип'>
         </a>
         <ul class='main-nav__list'>
           <li class='main-nav__item'>
@@ -32,7 +32,7 @@
     <main class='main-page'>
       <section class='main-section'>
         <h1 class='visually-hidden'>Седона</h1>
-        <img src='img/welcome.png'>
+        <img src='img/welcome.png' alt='Седона'>
         <h2 class='main-section__slogan'>Седона - небольшой городок в Аризоне, заслуживающий большего!</h2>
         <p class='main-section__text'>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
       </section>
@@ -49,17 +49,17 @@
             </figure>
               <ul class='plus__detail-list'>
                 <li class='plus__detail-item'>
-                  <img src='img/icon-1.svg'>
+                  <img src='img/icon-1.svg' alt='Дом'>
                   <h4 class='plus__detail-title'>Жилье</h4>
                   <p class='plus__detail-cause'>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
                 </li>
                 <li class='plus__detail-item'>
-                  <img src='img/icon-2.svg'>
+                  <img src='img/icon-3.svg' alt='Еда'>
                   <h4 class='plus__detail-title'>Еда</h4>
                   <p class='plus__detail-cause'>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
                 </li>
                 <li class='plus__detail-item'>
-                  <img src='img/icon-3.svg'>
+                  <img src='img/icon-2.svg' alt='Подарок'>
                   <h4 class='plus__detail-title'>Сувениры</h4>
                   <p class='plus__detail-cause'>Не только китайского, но и местного производства!</p>
                 </li>
@@ -90,38 +90,38 @@
         </ul>
       </section>
       
-      <section class='seach-hotels'>
+      <section class='search-hotels'>
         <h2 class='visually__hidden'>Поиск гостиницы в Седоне</h2>
-        <h3 class='seach-hotels__title'>Заинтересовались?</h3>
-        <p class='seach-hotels__request'>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-        <button class='seach-hotels__button'>Поиск гостиницы в Седоне</button>
+        <h3 class='search-hotels__title'>Заинтересовались?</h3>
+        <p class='search-hotels__request'>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+        <button class='search-hotels__button'>Поиск гостиницы в Седоне</button>
         <form class='search-hotels__form' method='post' action='https://echo.htmlacademy.ru'>
-          <fieldset class='seach-hotels__section'>
+          <fieldset class='search-hotels__section'>
             <legend class='visually__hidden'>Поиск</legend>
             <p>
-              <label for='arrial__date'> Дата заезда:</label>
+              <label class='search-hotels__label' for='arrial__date'> Дата заезда:</label>
               <input id='arrial__date' type='date' name='date'>
             </p>
             <p>
-              <label for='departure__date'> Дата выезда:</label>
+              <label class='search-hotels__label' for='departure__date'> Дата выезда:</label>
               <input id='departure__date' type='date' name='date'>
             </p>
             <p>
-              <label for='adult__amount'> Взрослые:</label>
-              <button class="adult__toggle adult__toggle--minus">-</button>
-              <input type='text' placeholder='2'>
-              <button class="adult__toggle adult__toggle--plus">+</button>
-              <label for='children__amount'> Дети:</label> 
-              <button class='children__toggle children__toggle--minus'>-</button>
-              <input type='text' placeholder='0'>
-              <button class='children__toggle children__toggle--plus'>+</button>
+              <label class='search-hotels__label' for='adult__amount'> Взрослые:</label>
+              <button class="adult__toggle adult__toggle--minus" aria-label='Меньше'>-</button>
+              <input id='adult__amount' type='text' placeholder='2'>
+              <button class="adult__toggle adult__toggle--plus" aria-label='Больше'>+</button>
+              <label class='search-hotels__label' for='children__amount'> Дети:</label> 
+              <button class='children__toggle children__toggle--minus' aria-label='Меньше'>-</button>
+              <input id='children__amount' type='text' placeholder='0'>
+              <button class='children__toggle children__toggle--plus' aria-label='Больше'>+</button>
             </p>
             <p>
-              <button type="submit">Найти</button> 
+              <button class='search-hotels__button' type="submit">Найти</button> 
             </p>
           </fieldset>
         </form>
-        <img src='img/map.png' width='1200' height='473'>
+        <img src='img/map.png' width='1200' height='473' alt='Карта'>
       </section>    
     </main>
     
@@ -134,17 +134,17 @@
         <ul class='socials__list'>
           <li class='socials__item'>
             <a class='socials__button' href='#twitter' aria-label='Твиттер'>
-              <img src='img/twitter.svg'>
+              <img src='img/twitter.svg' alt='Твиттер'>
             </a>
           </li>
           <li class='socials__item'>
             <a class='socials__button' href='#facebook' aria-label='Фэйсбук'>
-              <img src='img/fb-icon.svg'>
+              <img src='img/fb-icon.svg' alt='Фэйсбук'>
             </a>
           </li>
           <li class='socials__item'>
-            <a class='socials__button' href='#youtube'aria-label='Ютуб'>
-              <img src='img/youtube.svg'>
+            <a class='socials__button' href='#youtube' aria-label='Ютуб'>
+              <img src='img/youtube.svg' alt='Ютуб'>
             </a>
           </li>
         </ul>
@@ -152,7 +152,7 @@
       
       <div class='copyright'>
         <b class='copyright__text'>website by</b>
-        <img src='img/logo-htmlacademy.svg' width='115' height='41'>
+        <img src='img/logo-htmlacademy.svg' width='115' height='41' alt='Логотип htmlacademy'>
       </div>
     </footer>
   </body>
