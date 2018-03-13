@@ -9,8 +9,8 @@
   <body>
     <header class='header-page'>
       <nav class='main-nav' aria-label='Навигация по сайту'>
-        <a class='main-nav__logo' aria-label='Логотип'>
-          <img src='img/logo.png' alt='Логотип'>
+        <a class='main-nav__logo' aria-label='Логотип City of Sedona'>
+          <img src='img/logo.png' width='138' height='70' alt='Логотип City of Sedona'>
         </a>
         <ul class='main-nav__list'>
           <li class='main-nav__item'>
@@ -32,7 +32,7 @@
     <main class='main-page'>
       <section class='main-section'>
         <h1 class='visually-hidden'>Седона</h1>
-        <img src='img/welcome.png' alt='Седона'>
+        <img src='img/welcome.png' width='458' height='352' alt="Добро пожаловать в Седону">
         <h2 class='main-section__slogan'>Седона - небольшой городок в Аризоне, заслуживающий большего!</h2>
         <p class='main-section__text'>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
       </section>
@@ -45,28 +45,30 @@
             <span class='plus__number'>- №1 -</span>
             <p class='plus__cause'>Седона - не аттракцион для туристов, там течет своя жизнь</p>
             <figure class='plus__pic'>
-              <img src='img/main_foto1.jpg' alt='Город'>    
+              <img src='img/main_foto1.jpg' width='800' height='400' alt='Изображение города'>    
             </figure>
               <ul class='plus__detail-list'>
                 <li class='plus__detail-item'>
-                  <img src='img/icon-1.svg' alt='Дом'>
+                  <svg width='75' height='72'>
+                    <rect fill='' width='75' height='72'/>  
+                  </svg>
                   <h4 class='plus__detail-title'>Жилье</h4>
                   <p class='plus__detail-cause'>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
                 </li>
                 <li class='plus__detail-item'>
-                  <img src='img/icon-3.svg' alt='Еда'>
+                  <img src='img/icon-3.svg'>
                   <h4 class='plus__detail-title'>Еда</h4>
                   <p class='plus__detail-cause'>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
                 </li>
                 <li class='plus__detail-item'>
-                  <img src='img/icon-2.svg' alt='Подарок'>
+                  <img src='img/icon-2.svg'>
                   <h4 class='plus__detail-title'>Сувениры</h4>
                   <p class='plus__detail-cause'>Не только китайского, но и местного производства!</p>
                 </li>
               </ul>
           <li class='plus__item'>
             <figure class='plus__pic'>
-              <img src='img/main_foto2.jpg' alt='Мост дьявола'>    
+              <img src='img/main_foto2.jpg' width='800' height='400' alt='Мост дьявола'>    
             </figure>  
             <h3 class='plus__title'>Там есть мост дьявола</h3>
             <span class='plus__number'>- №2 -</span>
@@ -99,21 +101,21 @@
           <fieldset class='search-hotels__section'>
             <legend class='visually__hidden'>Поиск</legend>
             <p>
-              <label class='search-hotels__label' for='arrial__date'> Дата заезда:</label>
-              <input id='arrial__date' type='date' name='date'>
+              <label class='search-hotels__label' for='filter-arrial__date'> Дата заезда:</label>
+              <input id='filter-arrial__date' type='date' name='arrial__date'>
             </p>
             <p>
-              <label class='search-hotels__label' for='departure__date'> Дата выезда:</label>
-              <input id='departure__date' type='date' name='date'>
+              <label class='search-hotels__label' for='filter-departure__date'> Дата выезда:</label>
+              <input id='filter-departure__date' type='date' name='departure__date'>
             </p>
             <p>
-              <label class='search-hotels__label' for='adult__amount'> Взрослые:</label>
+              <label class='search-hotels__label' for='filter-adult__amount'> Взрослые:</label>
               <button class="adult__toggle adult__toggle--minus" aria-label='Меньше'>-</button>
-              <input id='adult__amount' type='text' placeholder='2'>
+              <input id='filter-adult__amount' type='text' name='adult__amount' placeholder='2'>
               <button class="adult__toggle adult__toggle--plus" aria-label='Больше'>+</button>
-              <label class='search-hotels__label' for='children__amount'> Дети:</label> 
+              <label class='search-hotels__label' for='filter-children__amount'> Дети:</label> 
               <button class='children__toggle children__toggle--minus' aria-label='Меньше'>-</button>
-              <input id='children__amount' type='text' placeholder='0'>
+              <input id='filter-children__amount' type='text' name='children__amount' placeholder='0'>
               <button class='children__toggle children__toggle--plus' aria-label='Больше'>+</button>
             </p>
             <p>
@@ -134,17 +136,17 @@
         <ul class='socials__list'>
           <li class='socials__item'>
             <a class='socials__button' href='#twitter' aria-label='Твиттер'>
-              <img src='img/twitter.svg' alt='Твиттер'>
+              <img src='img/twitter.svg'>
             </a>
           </li>
           <li class='socials__item'>
             <a class='socials__button' href='#facebook' aria-label='Фэйсбук'>
-              <img src='img/fb-icon.svg' alt='Фэйсбук'>
+              <img src='img/fb-icon.svg'>
             </a>
           </li>
           <li class='socials__item'>
             <a class='socials__button' href='#youtube' aria-label='Ютуб'>
-              <img src='img/youtube.svg' alt='Ютуб'>
+              <img src='img/youtube.svg'>
             </a>
           </li>
         </ul>

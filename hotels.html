@@ -10,7 +10,7 @@
     <header class='header-page'>
       <nav class='main-nav' aria-label='Навигация по сайту'>
         <a class='main-nav__logo' href='index.html' aria-label='Ссылка на главную страницу'>
-          <img src='img/logo.png' alt='Логотип'>
+          <img src='img/logo.png' width='138' height='70' alt='Логотип City of Sedona'>
         </a>
         <ul class='main-nav__list'>
           <li class='main-nav__item'>
@@ -34,41 +34,41 @@
         <fieldset class='main-page__section'>
             <legend class='main-page__title'>Инфраструктура:</legend>
             <p>
-              <input id='pool__item' type='checkbox' name='checkbox' checked>
-              <label class='main-page__label' for='pool__item'>Бассейн</label>
+              <input id='filter-pool__item' type='checkbox' name='pool__item' checked>
+              <label class='main-page__label' for='filter-pool__item'>Бассейн</label>
             </p>
             <p>
-              <input id='parking__item' type='checkbox' name='checkbox'>
-              <label class='main-page__label' for='parking__item'>Парковка</label>
+              <input id='filter-parking__item' type='checkbox' name='parking__item'>
+              <label class='main-page__label' for='filter-parking__item'>Парковка</label>
             </p>
             <p>
-              <input id='wifi__item' type='checkbox' name='checkbox'>
-              <label class='main-page__label' for='wifi__item'>Wi Fi</label>
+              <input id='filter-wifi__item' type='checkbox' name='wifi__item'>
+              <label class='main-page__label' for='filter-wifi__item'>Wi Fi</label>
             </p>
          </fieldset>
         
          <fieldset class='main-page__section'>
             <legend class='main-page__title'>Тип жилья:</legend>
             <p>
-              <input id='hotel__item' type='checkbox' name='checkbox' checked>
-              <label class='main-page__label' for='hotel__item'>Гостиница</label>
+              <input id='filter-hotel__item' type='checkbox' name='hotel__item' checked>
+              <label class='main-page__label' for='filter-hotel__item'>Гостиница</label>
             </p>
             <p>
-              <input id='motel__item' type='checkbox' name='checkbox' checked>
-              <label class='main-page__label' for='motel__item'>Мотель</label>
+              <input id='filter-motel__item' type='checkbox' name='motel__item' checked>
+              <label class='main-page__label' for='filter-motel__item'>Мотель</label>
             </p>
             <p>
-              <input id='apartments__item' type='checkbox' name='checkbox' checked>
-              <label class='main-page__label' for='apartments__item'>Апартаменты</label>
+              <input id='filter-apartments__item' type='checkbox' name='apartments__item' checked>
+              <label class='main-page__label' for='filter-apartments__item'>Апартаменты</label>
             </p>
          </fieldset>
          
-         <fieldset fieldset class='main-page__section'>
+         <fieldset class='main-page__section'>
            <legend class='main-page__title'>Стоимость в сутки:</legend>
-           <label class='main-page__label' for='number__from-item'>От</label>
-             <input id='number__from-item'  type='number' name='number' placeholder='0'>
-           <label class='main-page__label' for='number__before-item'>До</label> 
-             <input id='number__before-item' type='number' name='number' placeholder='3000'>    
+           <label class='main-page__label' for='filter-number__from-item'>От</label>
+             <input id='filter-number__from-item'  type='number' name='number__from-item' placeholder='0'>
+           <label class='main-page__label' for='filter-number__before-item'>До</label> 
+             <input id='filter-number__before-item' type='number' name='number__before-item' placeholder='3000'>    
            <div class="main-page__controls"> 
              <div class="main-page__controls-range">
                  <div class="main-page__controls-active"></div>
@@ -100,10 +100,10 @@
               </li>
             </ul>
             <a class='sort__left-button' href='#' aria-label='Сортировка'>
-              <img src='img/icon-up-dir.svg' alt='Стрелка сортировки вверх'>
+              <img src='img/icon-up-dir.svg'>
             </a>
             <a class='sort__right-button' href='#' aria-label='Сортировка'>
-              <img src='img/icon-down-dir.svg' alt='Стрелка сортировки вниз'>
+              <img src='img/icon-down-dir.svg'>
             </a>
           </section>
          
@@ -119,16 +119,16 @@
                 <a class='search-result__button-booking' href='booking.html'>Забронировать</a>
                 <ul class='search-result__grade-list'>
                   <li class='search-result__grade-item'>
-                    <img src='img/star.svg' alt='Звездочка'>
+                    <img src='img/star.svg'>
                   </li>                                      
                   <li class='search-result__grade-item'>
-                      <img src='img/star.svg' alt='Звездочка'>
+                      <img src='img/star.svg'>
                   </li>
                   <li class='search-result__grade-item'>
-                    <img src='img/star.svg' alt='Звездочка'>
+                    <img src='img/star.svg'>
                   </li>
                   <li class='search-result__grade-item'>
-                    <img src='img/star.svg' alt='Звездочка'>
+                    <img src='img/star.svg'>
                   </li>
                 </ul>
                 <span class='search-result__rating-total'>Рейтинг:8,5</span>
@@ -145,13 +145,13 @@
                 <a class='search-result__button-booking' href='booking.html'>Забронировать</a>
                 <ul class='search-result-grade__list'>
                   <li class='search-result__grade-item'> 
-                    <img src='img/star.svg' alt='Звездочка'>
+                    <img src='img/star.svg'>
                   </li>
                   <li class='search-result__grade-item'>
-                    <img src='img/star.svg' alt='Звездочка'>
+                    <img src='img/star.svg'>
                   </li>
                   <li class='search-result__grade-item'>
-                    <img src='img/star.svg' alt='Звездочка'>
+                    <img src='img/star.svg'>
                   </li>
                 </ul>
                 <span class='search-result__rating-total'>Рейтинг:8,9</span>                            
@@ -168,10 +168,10 @@
                 <a class='search-result__button-booking' href='booking.html'>Забронировать</a>
                 <ul class='search-result__grade-list'>
                   <li class='search-result__grade-item'>
-                    <img src='img/star.svg' alt='Звездочка'>
+                    <img src='img/star.svg'>
                   </li>
                   <li class='search-result__grade-item'>
-                    <img src='img/star.svg' alt='Звездочка'>
+                    <img src='img/star.svg'>
                   </li>
                 </ul>
                 <span class='search-result__rating-total'>Рейтинг:9,2</span>
@@ -191,17 +191,17 @@
         <ul class='socials__list'>
           <li class='socials__item'>
             <a class='socials__button' href='#twitter' aria-label='Твиттер'>
-              <img src='img/twitter.svg' alt='Твиттер'>
+              <img src='img/twitter.svg'>
             </a>
           </li>
           <li class='socials__item'>
             <a class='socials__button' href='#facebook' aria-label='Фэйсбук'>
-              <img src='img/fb-icon.svg' alt='Фэйсбук'>
+              <img src='img/fb-icon.svg'>
             </a>
           </li>
           <li class='socials__item'>
             <a class='socials__button' href='#youtube' aria-label='Ютуб'>
-              <img src='img/youtube.svg' alt='Ютуб'>
+              <img src='img/youtube.svg'>
             </a>
           </li>
         </ul>
