@@ -3,10 +3,13 @@
   <head>
     <meta charset='utf-8'>
       <title>HTML Academy: Седона</title>
-      <link rel='stylesheet' href='main.css'>
+      <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">   
+      <link rel='stylesheet' href='css/normalize.css'>
+      <link rel='stylesheet' href='css/style.css'>
   </head>
   
   <body>
+   <div class="page-wrapper">
     <header class='header-page'>
       <nav class='main-nav' aria-label='Навигация по сайту'>
         <a class='main-nav__logo' href='index.html' aria-label='Ссылка на главную страницу'>
@@ -73,15 +76,15 @@
              <div class="main-page__controls-range">
                  <div class="main-page__controls-active"></div>
              </div>
-              <button aria-label='Бегунок'></button>
-              <button aria-label='Бегунок'></button>
+              <button type='button' aria-label='Бегунок'></button>
+              <button type='button' aria-label='Бегунок'></button>
            </div>
            <button class='main-page__button' type='submit'>Показать</button> 
          </fieldset>
         </form>
                   
       <section class='search-result'>
-        <h1 class='visually__hidden'>Результаты поиска</h1>
+        <h1 class='visually-hidden'>Результаты поиска</h1>
         
         <section class='search-result__sort'>
           <h2 class='seach-result__caption'>НАЙДЕНО:3</h2>
@@ -90,7 +93,7 @@
             <h3 class='sort__title'>СОРТИРОВКА:</h3>
             <ul class='sort__list'>
               <li class='sort__item'>
-                <a class='sort__link' href='price.html'>ПО ЦЕНЕ</a>
+                <a class='sort__link' href='index.html'>ПО ЦЕНЕ</a>
               </li>
               <li class='sort__item'>
                 <a class='sort__link' href='type.html'>ПО ТИПУ</a>
@@ -183,9 +186,8 @@
     </main>
     
     <footer class='footer-page'>
-      <div class='footer-page__reference'>
-          <a class='footer-page__link' href='#visitsedona'>#visitsedona</a>
-      </div> 
+      <p class='footer-page__reference'>#visitsedona
+      </p> 
       
       <div class='socials'>
         <ul class='socials__list'>
@@ -209,8 +211,11 @@
       
       <div class='copyright'>
         <b class='copyright__text'>website by</b>
-        <img src='img/logo-htmlacademy.svg' width='115' height='41' alt='Логотип htmlacademy'>
+        <a class='copyright__logo' aria-label='Логотип htmlacademy'>
+          <img src='img/logo-htmlacademy.svg' width='115' height='41' alt='Логотип htmlacademy'>
+        </a> 
       </div>
     </footer>
+   </div>
   </body>
 </html>

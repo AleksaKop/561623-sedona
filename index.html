@@ -3,14 +3,17 @@
   <head>
     <meta charset='utf-8'>
       <title>HTML Academy: Седона</title>
-      <link rel='stylesheet' href='main.css'>
+      <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+      <link rel='stylesheet' href='css/normalize.css'>
+      <link rel='stylesheet' href='css/style.css'>
   </head>
   
   <body>
+   <div class="page-wrapper">
     <header class='header-page'>
       <nav class='main-nav' aria-label='Навигация по сайту'>
         <a class='main-nav__logo' aria-label='Логотип City of Sedona'>
-          <img src='img/logo.png' width='138' height='70' alt='Логотип City of Sedona'>
+         <img src='img/logo.png' width='138' height='70' alt='Логотип City of Sedona'>
         </a>
         <ul class='main-nav__list'>
           <li class='main-nav__item'>
@@ -93,13 +96,13 @@
       </section>
       
       <section class='search-hotels'>
-        <h2 class='visually__hidden'>Поиск гостиницы в Седоне</h2>
+        <h2 class='visually-hidden'>Поиск гостиницы в Седоне</h2>
         <h3 class='search-hotels__title'>Заинтересовались?</h3>
         <p class='search-hotels__request'>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-        <button class='search-hotels__button'>Поиск гостиницы в Седоне</button>
+        <button class='search-hotels__button' type='button'>Поиск гостиницы в Седоне</button>
         <form class='search-hotels__form' method='post' action='https://echo.htmlacademy.ru'>
           <fieldset class='search-hotels__section'>
-            <legend class='visually__hidden'>Поиск</legend>
+            <legend class='visually-hidden'>Поиск</legend>
             <p>
               <label class='search-hotels__label' for='filter-arrial__date'> Дата заезда:</label>
               <input id='filter-arrial__date' type='date' name='arrial__date'>
@@ -110,16 +113,16 @@
             </p>
             <p>
               <label class='search-hotels__label' for='filter-adult__amount'> Взрослые:</label>
-              <button class="adult__toggle adult__toggle--minus" aria-label='Меньше'>-</button>
+              <button class='adult__toggle-minus' type='button' aria-label='Меньше'>-</button>
               <input id='filter-adult__amount' type='text' name='adult__amount' placeholder='2'>
-              <button class="adult__toggle adult__toggle--plus" aria-label='Больше'>+</button>
+              <button class='adult__toggle-plus' type='button' aria-label='Больше'>+</button>
               <label class='search-hotels__label' for='filter-children__amount'> Дети:</label> 
-              <button class='children__toggle children__toggle--minus' aria-label='Меньше'>-</button>
+              <button class='children__toggle-minus' type='button' aria-label='Меньше'>-</button>
               <input id='filter-children__amount' type='text' name='children__amount' placeholder='0'>
-              <button class='children__toggle children__toggle--plus' aria-label='Больше'>+</button>
+              <button class='children__toggle-plus' type='button' aria-label='Больше'>+</button>
             </p>
             <p>
-              <button class='search-hotels__button' type="submit">Найти</button> 
+              <button class='search-hotels__select-button' type="submit">Найти</button> 
             </p>
           </fieldset>
         </form>
@@ -127,10 +130,9 @@
       </section>    
     </main>
     
-    <footer class='footer-page'>
-      <div class='footer-page__reference'>
-          <a class='footer-page__link' href='#visitsedona'>#visitsedona</a>
-      </div> 
+     <footer class='footer-page'>
+      <p class='footer-page__reference'>#visitsedona
+      </p> 
       
       <div class='socials'>
         <ul class='socials__list'>
@@ -154,8 +156,11 @@
       
       <div class='copyright'>
         <b class='copyright__text'>website by</b>
-        <img src='img/logo-htmlacademy.svg' width='115' height='41' alt='Логотип htmlacademy'>
+        <a class='copyright__logo' aria-label='Логотип htmlacademy'>
+          <img src='img/logo-htmlacademy.svg' width='115' height='41' alt='Логотип htmlacademy'>
+        </a> 
       </div>
     </footer>
+   </div>
   </body>
 </html>
