@@ -59,7 +59,6 @@ a {
   padding-bottom: 15px;
   padding-top: 15px;
   display: block;
-  text-align: center;
   text-align: left;
 }
 
@@ -87,63 +86,125 @@ a {
   color: #766357; 
 }*/
 
+.main-page {
+  width: auto;
+  margin: 0;
+}
+
 .main-section {
   background-color: #f2f2f2;
   background-image: url('../img/backgroundphoto.jpg');
   background-position: top center;
   background-repeat: no-repeat;
-  line-height: 26px;
   text-align: center;
   box-sizing:border-box;
   width: 100%;
   padding-top: 77px;
+  padding-bottom: 96px;
 }
 
-.main-section__slogan {
+.main-page__slogan {
+  line-height: 26px;
+  background-color: #ffffff;
+  padding-top: 63px;
+  padding-bottom: 60px; 
+  text-align: center;
+}
+
+.main-page__slogan-title {
+  display: block;
+  text-align: center;
   font-size: 21px;
   line-height: 26px;
 }
 
-.plus__title, 
-.plus__detail-title {
+.feature__list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+  
+}
+
+.feature__info {
+  width: 33.3%;
+  margin: auto;
+}
+
+.feature__pic {
+  width: 66.7%;
+  margin: auto;
+}
+
+.feature__item:nth-child(1) {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.feature__title, 
+.feature__detail-title {
   font-size: 21px;
 }
 
-.plus__list,
-.plus__detail-list {
+.feature__list,
+.feature__detail-list {
   list-style: none;
 }
 
-.plus__list {
-  text-align: center;
-}
-
-.plus__item:nth-child(1),
-.plus__item:nth-child(2) {
+.feature__item:nth-child(1),
+.feature__item:nth-child(2) {
   color: #ffffff;
   background-color: #81b3d2;
 }
 
-.plus__detail-list > li {
+.feature__detail-list > li {
   color: #333333;
   background-color: #ffffff;
 }
-.plus__item:nth-child(3),
-.plus__item:nth-child(4),
-.plus__item:nth-child(5) {
+
+.feature__detail-list {
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.feature__detail-item {
+  display: block;
+  padding-top: 61px;
+  padding-bottom: 87px;
+}
+
+.feature__item:nth-child(2) {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.feature__item:nth-child(3),
+.feature__item:nth-child(4),
+.feature__item:nth-child(5) {
+  width: 33.3%;
+  padding-top: 50px;
+  padding-bottom: 64px;
   background-color: #eeeeee
 }
+
+.search-hotels {
+  background-color: #ffffff;
+  padding-top: 55px;
+  text-align: center;
+ }
 
 .search-hotels__title {
   font-size: 30px;
   line-height: 36px;
-  text-align: center;
 }
 
 .search-hotels__request {
-  line-height: 24px;
+  line-height: 24px;    
   text-transform: uppercase;
-  text-align: center;
+  padding-bottom: 52px;
 }
 
 .search-hotels__button {
@@ -154,6 +215,8 @@ a {
   background-color: #766357;
   color: #ffffff;
   padding: 29px;
+  display: inline-block;
+  width: 47.5%;
 }
 
 .search-hotels__button:hover {
@@ -165,17 +228,28 @@ a {
   color: #857871;
 }
 
+.search-hotels__form {
+  width: 47.5%;
+  margin: auto;
+}
+
 .search-hotels__section {
-  background-color: #ffffff;  
+  background-color: #ffffff; 
+  border: none;
 }
 
 .search-hotels__section input {
   box-sizing:border-box;
-  width:100%;
+  width: 60.5%;
   padding:10px;
   background-color:#f2f2f2;
   border:2px solid transparent;
-  outline:none;
+  outline: none;
+}
+
+.search-hotels__section input:nth-child(3),
+.search-hotels__section input:nth-child(4) {
+  width: 10%;
 }
 
 .search-hotels__section input:hover {
@@ -184,7 +258,7 @@ a {
 
 .search-hotels__section input:focus {
   background-color: #ffffff;
-  border-color: #e5e5e5;
+  border: 2px solid #e5e5e5;
 }
 
 .search-hotels__label {
@@ -224,7 +298,7 @@ a {
   color: #81b3d2;
 }
   
- .search-hotels__select-button {
+.search-hotels__select-button {
   text-transform: uppercase;
   font-size: 21px;
   line-height: 26px;
@@ -232,6 +306,7 @@ a {
   background-color: #81b3d2;
   color: #ffffff; 
   padding: 14px;
+  width: 80.3%;
 }
 
 .search-hotels__select-button:hover {
@@ -245,6 +320,11 @@ a {
 
 .footer-page {
   background-color: rgba(249, 250, 246, 0.9);
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
 }
 
 .footer-page__reference {
@@ -252,34 +332,34 @@ a {
   line-height: 26px;
   font-weight: 700;
   color: #000000;
+  display: inline-flex;
+  padding-top: 51px;
+  padding-bottom: 54px;
+  margin: 0;
+}
+
+.socials {
+ padding-top: 36px;
+ padding-bottom: 36px;
 }
 
 .socials__list {
-list-style: none;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 150px;
+  margin: 0 auto;
+  padding: 0;
 }
 
-.socials__button:nth-child(1) {
+.socials__button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 46px;
+  height: 48px;
   background-color: #81b3d2;
-  padding-top: 15px;
-  padding-bottom: 15px;
-  padding-left: 14px;
-  padding-right: 15px;  
-}
-
-.socials__button:nth-child(2) {
-  background-color: #81b3d2;
-  padding-top: 15px;
-  padding-bottom: 15px;
-  padding-left: 17px;
-  padding-right: 18x;
-  }
-
-.socials__button:nth-child(3) {
-  background-color: #81b3d2;
-  padding-top: 15px;
-  padding-bottom: 15px;
-  padding-left: 13px;
-  padding-right: 13px;  
 }
 
 .socials__button:hover {
@@ -294,11 +374,23 @@ list-style: none;
   fill: #88b6d1; 
 }
 
+.copyright {
+  display: flex;
+  justify-content: center;
+}
+
 .copyright__text {
+  display: block;
   line-height: 26px;
+  padding-top: 54px;
+  padding-bottom: 56px;
+  padding-right: 8px;
 }
 
 .copyright__logo-htmlacademy {
+  display: block;
+  padding-top: 40px; 
+  padding-bottom: 40px;
   width: 115px;
   height: 41px;
 }
@@ -313,6 +405,13 @@ list-style: none;
 
 /* Вторая страница */
 
+.main-page {
+  width: 100%;
+  min-width: 768px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
 .main-page__form {
   color: #ffffff;
   background-color: #f2f2f2;
@@ -320,12 +419,32 @@ list-style: none;
   background-position: top center;
   background-repeat: no-repeat;
   box-sizing:border-box;
-  width: 100%;  
+  width: 100%; 
+  display: flex;
 }
+
+.main-page__section:nth-child(1) {
+  width: 21.6%;
+  text-align: left;
+  padding-left: 72px;
+}
+
+.main-page__section:nth-child(2) {
+  width: 21.6%;
+  text-align: left;
+  padding-left: 55px;
+}
+
+.main-page__section:nth-child(3) {
+  width: 57.5%;
+  text-align: center;
+}
+
 .main-page__title {
   font-size: 16px;
   line-height: 21px;
   font-weight: 700;
+  padding-top: 32px;
 }
 
 .main-page__section input{
@@ -358,6 +477,7 @@ list-style: none;
 
 .search-result__sort {
   background-color: #ffffff;
+
 }
 
 .seach-result__caption {
