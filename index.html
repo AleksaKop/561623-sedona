@@ -113,7 +113,7 @@
         <form class='search-hotels__form' method='post' action='https://echo.htmlacademy.ru'>
           <fieldset class='search-hotels__section'>
             <legend class='visually-hidden'>Поиск</legend>
-            <p>
+            <p class='search-hotels__item'>
               <label class='search-hotels__label' for='filter-arrial__date'> Дата заезда:</label>
               <input id='filter-arrial__date' type='date' name='arrial__date'>
               <a class='search-hotels__link-calendar' href='#calendar1.html'>
@@ -123,7 +123,7 @@
                 <path fill='#cacaca' d='M4.594 8.225h2.625v2.066H4.594zM4.594 11.668h2.625v2.067H4.594zM4.594 15.112h2.625v2.066H4.594zM9.188 15.112h2.625v2.066H9.188zM9.188 11.668h2.625v2.067H9.188zM9.188 8.225h2.625v2.066H9.188zM13.781 15.112h2.625v2.066h-2.625zM13.781 11.668h2.625v2.067h-2.625zM13.781 8.225h2.625v2.066h-2.625z'/></svg>
               </a>
             </p>
-            <p>
+            <p class='search-hotels__item'>
               <label class='search-hotels__label' for='filter-departure__date'> Дата выезда:</label>
               <input id='filter-departure__date' type='date' name='departure__date'>
               <a class='search-hotels__link-calendar' href='#calendar2.html'>
@@ -133,17 +133,19 @@
               <path fill='#cacaca' d='M4.594 8.225h2.625v2.066H4.594zM4.594 11.668h2.625v2.067H4.594zM4.594 15.112h2.625v2.066H4.594zM9.188 15.112h2.625v2.066H9.188zM9.188 11.668h2.625v2.067H9.188zM9.188 8.225h2.625v2.066H9.188zM13.781 15.112h2.625v2.066h-2.625zM13.781 11.668h2.625v2.067h-2.625zM13.781 8.225h2.625v2.066h-2.625z'/></svg>
               </a>
             </p>
-            <p>
+            <p class='search-hotels__item'>
               <label class='search-hotels__label' for='filter-adult__amount'> Взрослые:</label>
               <button class='adult__toggle-minus' type='button' aria-label='Меньше'>-</button>
               <input id='filter-adult__amount' type='text' name='adult__amount' placeholder='2'>
               <button class='adult__toggle-plus' type='button' aria-label='Больше'>+</button>
+            </p>
+            <p class='search-hotels__item'>
               <label class='search-hotels__label' for='filter-children__amount'> Дети:</label> 
               <button class='children__toggle-minus' type='button' aria-label='Меньше'>-</button>
               <input id='filter-children__amount' type='text' name='children__amount' placeholder='0'>
               <button class='children__toggle-plus' type='button' aria-label='Больше'>+</button>
             </p>
-            <p>
+            <p class='search-hotels__item'>
               <button class='search-hotels__select-button' type="submit">Найти</button> 
             </p>
           </fieldset>

@@ -152,50 +152,60 @@
               <li class='sort__item'>
                 <a class='sort__link' href='rating.html'>ПО РЕЙТИНГУ</a>
               </li>
+              <li class='sort__item'>
+                <a class='sort__button' href='#' aria-label='Сортировка по возрастанию'>
+                  <svg class='sort__icon-up' width='11' height='10' viewBox='0 0 11 10'><path fill='#cacaca' d='M5.5 0L0 10h11z'/></svg>
+                </a>
+                <a class='sort__button' href='#' aria-label='Сортировка по убыванию'>
+                  <svg class='sort__icon-down' width='11' height='10' viewBox='0 0 11 10'><path fill='#cacaca' d='M5.5 10L0 0h11'/></svg>
+                </a>
+              </li>
             </ul>
-            <a class='sort__left-button' href='#' aria-label='Сортировка'>
-              <svg class='sort__icon-up' width='11' height='10' viewBox='0 0 11 10'><path fill='#cacaca' d='M5.5 0L0 10h11z'/></svg>
-            </a>
-            <a class='sort__right-button' href='#' aria-label='Сортировка'>
-              <svg class='sort__icon-down' width='11' height='10' viewBox='0 0 11 10'><path fill='#cacaca' d='M5.5 10L0 0h11'/></svg>
-            </a>
           </section>
          </div>
-        
-          
+                  
           <ul class='search-result__list'>
             <li class='search-result__item'>
               <article class='search-result__article'>
                 <figure class='search-result__pic'>
                   <img src='img/hotels_foto1.jpg' alt='Гостиница'>
                 </figure>
-                <a class='search-result__title' href='#'>Amara resort & spa</a>
-                <p class='search-result__cost'>Гостиница от 4000 р.</p>
-                <a class='search-result__button-info' href='info.html'>Подробнее</a>
-                <a class='search-result__button-booking' href='booking.html'>Забронировать</a>
-                <ul class='search-result__grade-list'>
-                  <li class='search-result__grade-item'>
-                    <svg width='18' height='17' viewBox='0 0 18 17'>
+                <div class='search-result__info'>
+                  <a class='search-result__title' href='#'>Amara resort & spa</a>
+                  <div class='search-result__conteiner'>
+                      <p class='search-result__cost'>Гостиница</p>
+                      <a class='search-result__button-info' href='info.html'>Подробнее</a>
+                  </div>
+                  <div class='search-result__conteiner-info'> 
+                    <p class='search-result__cost'>От 4000 р.</p>
+                    <a class='search-result__button-booking' href='booking.html'>Забронировать</a>
+                  </div>
+                </div>
+                <div class='search-result__rating-info'>
+                  <ul class='search-result__rating-list'>
+                    <li class='search-result__rating-item'>
+                      <svg width='18' height='17' viewBox='0 0 18 17'>
                     
                     <path fill='#81B3D2' d='M9.002 0l2.126 6.494h6.877l-5.564 4.012L14.566 17l-5.564-4.013L3.438 17l2.126-6.494L0 6.494h6.878z'/></svg>
-                  </li>                                      
-                  <li class='search-result__grade-item'>
-                    <svg width='18' height='17' viewBox='0 0 18 17'>
+                    </li>                                      
+                    <li class='search-result__rating-item'>
+                      <svg width='18' height='17' viewBox='0 0 18 17'>
                     
                     <path fill='#81B3D2' d='M9.002 0l2.126 6.494h6.877l-5.564 4.012L14.566 17l-5.564-4.013L3.438 17l2.126-6.494L0 6.494h6.878z'/></svg>
-                  </li>    
-                  <li class='search-result__grade-item'>
-                    <svg width='18' height='17' viewBox='0 0 18 17'>
+                    </li>    
+                    <li class='search-result__rating-item'>
+                      <svg width='18' height='17' viewBox='0 0 18 17'>
                     
                     <path fill='#81B3D2' d='M9.002 0l2.126 6.494h6.877l-5.564 4.012L14.566 17l-5.564-4.013L3.438 17l2.126-6.494L0 6.494h6.878z'/></svg>
-                  </li>    
-                  <li class='search-result__grade-item'>
-                    <svg width='18' height='17' viewBox='0 0 18 17'>
+                    </li>    
+                    <li class='search-result__rating-item'>
+                      <svg width='18' height='17' viewBox='0 0 18 17'>
                     
                     <path fill='#81B3D2' d='M9.002 0l2.126 6.494h6.877l-5.564 4.012L14.566 17l-5.564-4.013L3.438 17l2.126-6.494L0 6.494h6.878z'/></svg>
-                  </li>    
-                </ul>
-                <span class='search-result__rating-total'>Рейтинг:8,5</span>
+                    </li>    
+                    <span class='search-result__rating-total'>Рейтинг:8,5</span>
+                  </ul>
+                </div>
               </article>
               
             <li class='search-result__item'>
@@ -203,28 +213,37 @@
                 <figure class='search-result__pic'>
                   <img src='img/hotels_foto2.jpg' alt='Мотель'>
                 </figure>
-                <a class='search-result__title' href='#'>Desert quail inn</a>
-                <p class='search-result__cost'>Мотель от 3000 р.</p>
-                <a class='search-result__button-info' href='info.html'>Подробнее</a>
-                <a class='search-result__button-booking' href='booking.html'>Забронировать</a>
-                <ul class='search-result__grade-list'>
-                  <li class='search-result__grade-item'> 
-                    <svg width='18' height='17' viewBox='0 0 18 17'>
+                <div class='search-result__info'>
+                  <a class='search-result__title' href='#'>Desert quail inn</a>
+                  <div class='search-result__conteiner'>
+                    <p class='search-result__cost'>Мотель</p> 
+                    <a class='search-result__button-info' href='info.html'>Подробнее</a>
+                  </div>
+                  <div class='search-result__conteiner-info'>
+                    <p class='search-result__cost'>От 3000 р.</p>
+                    <a class='search-result__button-booking' href='booking.html'>Забронировать</a>
+                  </div>  
+                </div>
+                <div class='search-result__rating-info'>
+                  <ul class='search-result__rating-list'>
+                    <li class='search-result__rating-item'> 
+                      <svg width='18' height='17' viewBox='0 0 18 17'>
                     
                     <path fill='#81B3D2' d='M9.002 0l2.126 6.494h6.877l-5.564 4.012L14.566 17l-5.564-4.013L3.438 17l2.126-6.494L0 6.494h6.878z'/></svg>
-                  </li>    
-                  <li class='search-result__grade-item'>
-                    <svg width='18' height='17' viewBox='0 0 18 17'>
+                    </li>    
+                    <li class='search-result__rating-item'>
+                      <svg width='18' height='17' viewBox='0 0 18 17'>
                     
                     <path fill='#81B3D2' d='M9.002 0l2.126 6.494h6.877l-5.564 4.012L14.566 17l-5.564-4.013L3.438 17l2.126-6.494L0 6.494h6.878z'/></svg>
-                  </li>    
-                  <li class='search-result__grade-item'>
-                   <svg width='18' height='17' viewBox='0 0 18 17'>
+                    </li>    
+                    <li class='search-result__rating-item'>
+                     <svg width='18' height='17' viewBox='0 0 18 17'>
                     
                     <path fill='#81B3D2' d='M9.002 0l2.126 6.494h6.877l-5.564 4.012L14.566 17l-5.564-4.013L3.438 17l2.126-6.494L0 6.494h6.878z'/></svg>
-                  </li>    
-                </ul>
-                <span class='search-result__rating-total'>Рейтинг:8,9</span>                            
+                    </li>    
+                    <span class='search-result__rating-total'>Рейтинг:8,9</span> 
+                  </ul> 
+                </div>      
               </article>
         
             <li class='search-result__item'>
@@ -232,23 +251,32 @@
                 <figure class='search-result__pic'>
                   <img src='img/hotels_foto3.jpg' alt='Апартаменты'>
                 </figure>
-                <a class='search-result__title' href='#'>Villas at poco diablo</a>
-                <p class='search-result__cost'>Апартаменты от 2000 р.</p>
-                <a class='search-result__button-info' href='info.html'>Подробнее</a>
-                <a class='search-result__button-booking' href='booking.html'>Забронировать</a>
-                <ul class='search-result__grade-list'>
-                  <li class='search-result__grade-item'>
-                    <svg width='18' height='17' viewBox='0 0 18 17'>
+                <div class='search-result__info'>
+                  <a class='search-result__title' href='#'>Villas at poco diablo</a>
+                  <div class='search-result__conteiner'>
+                    <p class='search-result__cost'>Апартаменты</p>
+                    <a class='search-result__button-info' href='info.html'>Подробнее</a>
+                  </div>
+                  <div class='search-result__conteiner-info'>
+                    <p class='search-result__cost'>От 2000 р.</p>
+                    <a class='search-result__button-booking' href='booking.html'>Забронировать</a>
+                  </div>
+                </div>
+                <div class='search-result__rating-info'>
+                  <ul class='search-result__rating-list'>
+                    <li class='search-result__rating-item'>
+                      <svg width='18' height='17' viewBox='0 0 18 17'>
                     
                     <path fill='#81B3D2' d='M9.002 0l2.126 6.494h6.877l-5.564 4.012L14.566 17l-5.564-4.013L3.438 17l2.126-6.494L0 6.494h6.878z'/></svg>
-                  </li>    
-                  <li class='search-result__grade-item'>
-                    <svg width='18' height='17' viewBox='0 0 18 17'>
+                    </li>    
+                    <li class='search-result__rating-item'>
+                      <svg width='18' height='17' viewBox='0 0 18 17'>
                     
                     <path fill='#81B3D2' d='M9.002 0l2.126 6.494h6.877l-5.564 4.012L14.566 17l-5.564-4.013L3.438 17l2.126-6.494L0 6.494h6.878z'/></svg>
-                  </li>    
-                </ul>
-                <span class='search-result__rating-total'>Рейтинг:9,2</span>
+                    </li>    
+                    <span class='search-result__rating-total'>Рейтинг:9,2</span>
+                  </ul>
+                </div>
               </article>
             </li>
           </ul>
