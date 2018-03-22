@@ -23,7 +23,7 @@
             <a class='main-nav__link' href='media.html'>Фото и видео</a>
           </li>
           <li class='main-nav__item'>
-            <a class='main-nav__link' href='map.html'>Карта</a>
+            <a class='main-nav__link' href='map.html'>Карта Штата</a>
           </li>
           <li class='main-nav__item'>
             <a class='main-nav__link' href='hotels.html'>Гостиницы</a>
@@ -52,7 +52,7 @@
               <p class='feature__cause'>Седона - не аттракцион для туристов, там течет своя жизнь</p>
             </div>
               <figure class='feature__pic'>
-                <img src='img/main_foto1.jpg' width='800' height='400' alt='Изображение города'>
+                <img src='img/main_foto1.jpg' alt='Изображение города'>
               </figure>
               <ul class='feature__detail-list'>
                 <li class='feature__detail-item'>
@@ -113,7 +113,7 @@
         <form class='search-hotels__form' method='post' action='https://echo.htmlacademy.ru'>
           <fieldset class='search-hotels__section'>
             <legend class='visually-hidden'>Поиск</legend>
-            <p class='search-hotels__item'>
+            <div class='search-hotels__item'>
               <label class='search-hotels__label' for='filter-arrial__date'> Дата заезда:</label>
               <input id='filter-arrial__date' type='date' name='arrial__date'>
               <a class='search-hotels__link-calendar' href='#calendar1.html'>
@@ -122,8 +122,8 @@
                 <path fill='#cacaca' d='M19.251 2.025h-2.845V.648c0-.381-.294-.689-.656-.689-.363 0-.656.308-.656.689v1.377h-3.938V.648c0-.381-.294-.689-.655-.689-.363 0-.657.308-.657.689v1.377H5.906V.648c0-.381-.294-.689-.656-.689-.363 0-.657.308-.657.689v1.377H1.75C.784 2.025 0 2.847 0 3.862v16.302C0 21.179.784 22 1.75 22h17.501c.966 0 1.749-.821 1.749-1.836V3.862c0-1.015-.783-1.837-1.749-1.837zm.437 18.139a.448.448 0 0 1-.437.459H1.75a.45.45 0 0 1-.438-.459V3.862a.45.45 0 0 1 .438-.459h2.844v1.378c0 .381.294.689.657.689.362 0 .656-.308.656-.689V3.403h3.938v1.378c0 .381.294.689.657.689.361 0 .655-.308.655-.689V3.403h3.938v1.378c0 .381.293.689.656.689.362 0 .656-.308.656-.689V3.403h2.845c.241 0 .437.206.437.459v16.302z'/>
                 <path fill='#cacaca' d='M4.594 8.225h2.625v2.066H4.594zM4.594 11.668h2.625v2.067H4.594zM4.594 15.112h2.625v2.066H4.594zM9.188 15.112h2.625v2.066H9.188zM9.188 11.668h2.625v2.067H9.188zM9.188 8.225h2.625v2.066H9.188zM13.781 15.112h2.625v2.066h-2.625zM13.781 11.668h2.625v2.067h-2.625zM13.781 8.225h2.625v2.066h-2.625z'/></svg>
               </a>
-            </p>
-            <p class='search-hotels__item'>
+            </div>
+            <div class='search-hotels__item'>
               <label class='search-hotels__label' for='filter-departure__date'> Дата выезда:</label>
               <input id='filter-departure__date' type='date' name='departure__date'>
               <a class='search-hotels__link-calendar' href='#calendar2.html'>
@@ -132,22 +132,24 @@
               <path fill='#cacaca' d='M19.251 2.025h-2.845V.648c0-.381-.294-.689-.656-.689-.363 0-.656.308-.656.689v1.377h-3.938V.648c0-.381-.294-.689-.655-.689-.363 0-.657.308-.657.689v1.377H5.906V.648c0-.381-.294-.689-.656-.689-.363 0-.657.308-.657.689v1.377H1.75C.784 2.025 0 2.847 0 3.862v16.302C0 21.179.784 22 1.75 22h17.501c.966 0 1.749-.821 1.749-1.836V3.862c0-1.015-.783-1.837-1.749-1.837zm.437 18.139a.448.448 0 0 1-.437.459H1.75a.45.45 0 0 1-.438-.459V3.862a.45.45 0 0 1 .438-.459h2.844v1.378c0 .381.294.689.657.689.362 0 .656-.308.656-.689V3.403h3.938v1.378c0 .381.294.689.657.689.361 0 .655-.308.655-.689V3.403h3.938v1.378c0 .381.293.689.656.689.362 0 .656-.308.656-.689V3.403h2.845c.241 0 .437.206.437.459v16.302z'/>
               <path fill='#cacaca' d='M4.594 8.225h2.625v2.066H4.594zM4.594 11.668h2.625v2.067H4.594zM4.594 15.112h2.625v2.066H4.594zM9.188 15.112h2.625v2.066H9.188zM9.188 11.668h2.625v2.067H9.188zM9.188 8.225h2.625v2.066H9.188zM13.781 15.112h2.625v2.066h-2.625zM13.781 11.668h2.625v2.067h-2.625zM13.781 8.225h2.625v2.066h-2.625z'/></svg>
               </a>
-            </p>
-            <p class='search-hotels__item'>
-              <label class='search-hotels__label' for='filter-adult__amount'> Взрослые:</label>
-              <button class='adult__toggle-minus' type='button' aria-label='Меньше'>-</button>
-              <input id='filter-adult__amount' type='text' name='adult__amount' placeholder='2'>
-              <button class='adult__toggle-plus' type='button' aria-label='Больше'>+</button>
-            </p>
-            <p class='search-hotels__item'>
-              <label class='search-hotels__label' for='filter-children__amount'> Дети:</label> 
-              <button class='children__toggle-minus' type='button' aria-label='Меньше'>-</button>
-              <input id='filter-children__amount' type='text' name='children__amount' placeholder='0'>
-              <button class='children__toggle-plus' type='button' aria-label='Больше'>+</button>
-            </p>
-            <p class='search-hotels__item'>
-              <button class='search-hotels__select-button' type="submit">Найти</button> 
-            </p>
+            </div>
+            <div class='search-hotels__container'>
+              <div class='search-hotels__item'>
+                <label class='search-hotels__label' for='filter-adult__amount'> Взрослые:</label>
+                <button class='adult__toggle-minus' type='button' aria-label='Меньше'>-</button>
+                <input id='filter-adult__amount' type='text' name='adult__amount' placeholder='2'>
+                <button class='adult__toggle-plus' type='button' aria-label='Больше'>+</button>
+              </div>
+              <div class='search-hotels__item'>
+                <label class='search-hotels__label' for='filter-children__amount'> Дети:</label> 
+                <button class='children__toggle-minus' type='button' aria-label='Меньше'>-</button>
+                <input id='filter-children__amount' type='text' name='children__amount' placeholder='0'>
+                <button class='children__toggle-plus' type='button' aria-label='Больше'>+</button>
+              </div>
+            </div>
+              <div class='search-hotels__item'>
+                <button class='search-hotels__select-button' type="submit">Найти</button> 
+              </div>
           </fieldset>
         </form>
         <img src='img/map.png' width='1200' height='473' alt='Карта'>
