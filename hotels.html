@@ -37,7 +37,7 @@
         <fieldset class='main-container__section'>
             <legend class='main-container__title'>Инфраструктура:</legend>
             <p>
-              <input id='filter-pool__item' type='checkbox' name='pool__item' checked>
+              <input class='visually-hidden' id='filter-pool__item' type='checkbox' name='pool__item' checked>
               <label class='main-container__label' for='filter-pool__item'>
               <svg width='23' height='23' viewBox='0 0 23 23'>
               
@@ -48,7 +48,7 @@
               Бассейн</label>
             </p>
             <p>
-              <input id='filter-parking__item' type='checkbox' name='parking__item'>
+              <input class='visually-hidden' id='filter-parking__item' type='checkbox' name='parking__item'>
               <label class='main-container__label' for='filter-parking__item'>
               <svg width='23' height='23' viewBox='0 0 23 23'>
               
@@ -59,7 +59,7 @@
               Парковка</label>
             </p>
             <p>
-              <input id='filter-wifi__item' type='checkbox' name='wifi__item'>
+              <input class='visually-hidden' id='filter-wifi__item' type='checkbox' name='wifi__item'>
               <label class='main-container__label' for='filter-wifi__item'>
               <svg width='23' height='23' viewBox='0 0 23 23'>
               
@@ -74,7 +74,7 @@
          <fieldset class='main-container__section'>
             <legend class='main-container__title'>Тип жилья:</legend>
             <p>
-              <input id='filter-hotel__item' type='checkbox' name='hotel__item' checked>
+              <input class='visually-hidden' id='filter-hotel__item' type='checkbox' name='hotel__item' checked>
               <label class='main-container__label' for='filter-hotel__item'>
               <svg width='23' height='23' viewBox='0 0 23 23'>
               
@@ -85,7 +85,7 @@
               Гостиница</label>
             </p>
             <p>
-              <input id='filter-motel__item' type='checkbox' name='motel__item' checked>
+              <input class='visually-hidden' id='filter-motel__item' type='checkbox' name='motel__item' checked>
               <label class='main-container__label' for='filter-motel__item'>
               <svg width='23' height='23' viewBox='0 0 23 23'>
               
@@ -96,7 +96,7 @@
               Мотель</label>
             </p>
             <p>
-              <input id='filter-apartments__item' type='checkbox' name='apartments__item' checked>
+              <input class='visually-hidden' id='filter-apartments__item' type='checkbox' name='apartments__item' checked>
               <label class='main-container__label' for='filter-apartments__item'>
               <svg width='23' height='23' viewBox='0 0 23 23'>
               
@@ -110,24 +110,18 @@
          
          <fieldset class='main-container__section'>
            <legend class='main-container__title'>Стоимость в сутки (P):</legend>
-           <label class='main-container__label' for='filter-number__from-item'>От</label>
-             <input id='filter-number__from-item'  type='number' name='number__from-item' placeholder='0'>
-           <label class='main-container__label' for='filter-number__before-item'>До</label> 
-             <input id='filter-number__before-item' type='number' name='number__before-item' placeholder='3000'>    
-           <div class="main-container__controls"> 
-             <div class="main-container__controls-range">
+           <div class='price-controls'>
+             <label class='main-container__label main-container__label--min' value='0'>От 0</label>
+             <label class='main-container__label label main-container__label--max' value='3000'>До 3000</label> 
+           </div>
+           <div class='main-container__controls'> 
+             <div class='main-container__controls-range'>
                  <div class="main-container__controls-active"></div>
              </div>
-              <button type='button' aria-label='Бегунок'>
-                <svg width='20' height='23' viewBox='0 0 20 23'>
-                
-                <path opacity='.3' fill='#ABABAB' d='M10 20C4.477 20 0 15.522 0 10v2c0 5.522 4.477 10 10 10 5.522 0 10-4.478 10-10v-2c0 5.522-4.478 10-10 10z'/><circle fill='#FFF' cx='10' cy='10' r='10'/><circle fill='#ABABAB' cx='10' cy='10' r='2'/></svg>
-              </button>
-              <button type='button' aria-label='Бегунок'>
-                <svg width='20' height='23' viewBox='0 0 20 23'>
-                
-                <path opacity='.3' fill='#ABABAB' d='M10 20C4.477 20 0 15.522 0 10v2c0 5.522 4.477 10 10 10 5.522 0 10-4.478 10-10v-2c0 5.522-4.478 10-10 10z'/><circle fill='#FFF' cx='10' cy='10' r='10'/><circle fill='#ABABAB' cx='10' cy='10' r='2'/></svg>   
-              </button>
+             <div class='range-toggle range-toggle-min'>
+             </div>
+             <div class='range-toggle range-toggle-max'>
+             </div>
            </div>
            <button class='main-container__button' type='submit'>Показать</button> 
          </fieldset>
@@ -168,7 +162,7 @@
             <li class='search-result__item'>
               <article class='search-result__article'>
                 <figure class='search-result__pic'>
-                  <img src='img/hotels_foto1.jpg' alt='Гостиница'>
+                  <img src='img/hotels_photo1.jpg' alt='Гостиница'>
                 </figure>
                 <div class='search-result__info'>
                   <a class='search-result__title' href='#'>Amara resort & spa</a>
@@ -213,7 +207,7 @@
             <li class='search-result__item'>
               <article class='search-result__article'>
                 <figure class='search-result__pic'>
-                  <img src='img/hotels_foto2.jpg' alt='Мотель'>
+                  <img src='img/hotels_photo2.jpg' alt='Мотель'>
                 </figure>
                 <div class='search-result__info'>
                   <a class='search-result__title' href='#'>Desert quail inn</a>
@@ -253,7 +247,7 @@
             <li class='search-result__item'>
               <article class='search-result__article'>
                 <figure class='search-result__pic'>
-                  <img src='img/hotels_foto3.jpg' alt='Апартаменты'>
+                  <img src='img/hotels_photo3.jpg' alt='Апартаменты'>
                 </figure>
                 <div class='search-result__info'>
                   <a class='search-result__title' href='#'>Villas at poco diablo</a>
@@ -290,7 +284,7 @@
       </section>
     </main>
     
-    <footer class='footer-page'>
+    <footer class='footer-page footer-page--search'>
       <p class='footer-page__reference'>#visitsedona
       </p> 
       
