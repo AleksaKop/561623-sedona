@@ -12,21 +12,21 @@
    <div class="page-wrapper">
     <header class='header-page'>
       <nav class='main-nav' aria-label='Навигация по сайту'>
-        <a class='main-nav__logo' href='index.html' aria-label='Ссылка на главную страницу'>
+        <a class='main-nav__logo' href='index.html' tabindex='3' aria-label='Ссылка на главную страницу'>
           <img src='img/logo.png' width='138' height='70' alt='Логотип City of Sedona'>
         </a>
         <ul class='main-nav__list'>
           <li class='main-nav__item'>
-            <a class='main-nav__link' href='info.html'>Информация</a>
+            <a class='main-nav__link' href='info.html' tabindex='1'>Информация</a>
           </li>
           <li class='main-nav__item'>
-            <a class='main-nav__link' href='media.html'>Фото и видео</a>
+            <a class='main-nav__link' href='media.html' tabindex='2'>Фото и видео</a>
           </li>
           <li class='main-nav__item'>
-            <a class='main-nav__link' href='map.html'>Карта Штата</a>
+            <a class='main-nav__link' href='map.html' tabindex='4'>Карта Штата</a>
           </li>
           <li class='main-nav__item'>
-            <a class='main-nav__link' href='hotels.html'>Гостиницы</a>
+            <a class='main-nav__link' href='hotels.html' tabindex='5'>Гостиницы</a>
           </li>
         </ul>
       </nav>
@@ -34,77 +34,41 @@
     
     <main class='main-container'>
       <form class='main-container__form' method='post' action='https://echo.htmlacademy.ru'>
-        <fieldset class='main-container__section main-container__section--infrastructure'>
+        <fieldset class='main-container__section'>
             <legend class='main-container__title'>Инфраструктура:</legend>
             <p>
               <input class='visually-hidden' id='filter-pool__item' type='checkbox' name='pool__item' checked>
               <label class='main-container__label' for='filter-pool__item'>
-              <svg class='checkbox checkbox__off' width='23' height='23' viewBox='0 0 23 23'>
-              
-              <path fill='#FFFFFF' d='M20 2c.542 0 1 .458 1 1v17c0 .542-.458 1-1 1H3c-.542 0-1-.458-1-1V3c0-.542.458-1 1-1h17m0-2H3C1.35 0 0 1.35 0 3v17c0 1.65 1.35 3 3 3h17c1.65 0 3-1.35 3-3V3c0-1.65-1.35-3-3-3z'/></svg>
-              <svg class='checkbox checkbox__on' width='27' height='23' viewBox='0 0 27 23'>
-              
-              <path fill='#FFFFFF' d='M7.285 7.486l-2.829 2.829 7.783 7.783L26.171 4.166l-2.828-2.829-11.104 11.102z'/><path fill='#FFFFFF' d='M21 20c0 .542-.458 1-1 1H3c-.542 0-1-.458-1-1V3c0-.542.458-1 1-1h16.908L21.493.415A2.96 2.96 0 0 0 20 0H3C1.35 0 0 1.35 0 3v17c0 1.65 1.35 3 3 3h17c1.65 0 3-1.35 3-3v-9.829l-2 2V20z'/></svg>
-              Бассейн</label>
+              <span class='main-container__checkbox-indicator'></span>Бассейн</label>
             </p>
             <p>
               <input class='visually-hidden' id='filter-parking__item' type='checkbox' name='parking__item'>
               <label class='main-container__label' for='filter-parking__item'>
-              <svg class='checkbox checkbox__off' width='23' height='23' viewBox='0 0 23 23'>
-              
-              <path fill='#FFFFFF' d='M20 2c.542 0 1 .458 1 1v17c0 .542-.458 1-1 1H3c-.542 0-1-.458-1-1V3c0-.542.458-1 1-1h17m0-2H3C1.35 0 0 1.35 0 3v17c0 1.65 1.35 3 3 3h17c1.65 0 3-1.35 3-3V3c0-1.65-1.35-3-3-3z'/></svg>
-              <svg class='checkbox checkbox__on' width='27' height='23' viewBox='0 0 27 23'>
-              
-              <path fill='#FFFFFF' d='M7.285 7.486l-2.829 2.829 7.783 7.783L26.171 4.166l-2.828-2.829-11.104 11.102z'/><path fill='#FFFFFF' d='M21 20c0 .542-.458 1-1 1H3c-.542 0-1-.458-1-1V3c0-.542.458-1 1-1h16.908L21.493.415A2.96 2.96 0 0 0 20 0H3C1.35 0 0 1.35 0 3v17c0 1.65 1.35 3 3 3h17c1.65 0 3-1.35 3-3v-9.829l-2 2V20z'/></svg>
-              Парковка</label>
+              <span class='main-container__checkbox-indicator'></span>Парковка</label>
             </p>
             <p>
               <input class='visually-hidden' id='filter-wifi__item' type='checkbox' name='wifi__item'>
               <label class='main-container__label' for='filter-wifi__item'>
-              <svg class='checkbox checkbox__off' width='23' height='23' viewBox='0 0 23 23'>
-              
-              <path fill='#FFFFFF' d='M20 2c.542 0 1 .458 1 1v17c0 .542-.458 1-1 1H3c-.542 0-1-.458-1-1V3c0-.542.458-1 1-1h17m0-2H3C1.35 0 0 1.35 0 3v17c0 1.65 1.35 3 3 3h17c1.65 0 3-1.35 3-3V3c0-1.65-1.35-3-3-3z'/></svg>
-              <svg class='checkbox checkbox__on' width='27' height='23' viewBox='0 0 27 23'>
-              
-              <path fill='#FFFFFF' d='M7.285 7.486l-2.829 2.829 7.783 7.783L26.171 4.166l-2.828-2.829-11.104 11.102z'/><path fill='#FFFFFF' d='M21 20c0 .542-.458 1-1 1H3c-.542 0-1-.458-1-1V3c0-.542.458-1 1-1h16.908L21.493.415A2.96 2.96 0 0 0 20 0H3C1.35 0 0 1.35 0 3v17c0 1.65 1.35 3 3 3h17c1.65 0 3-1.35 3-3v-9.829l-2 2V20z'/></svg>
-              Wi Fi</label>
+              <span class='main-container__checkbox-indicator'></span>Wi Fi</label>
             </p>
          </fieldset>
         
-         <fieldset class='main-container__section main-container__section--accommodation'>
+         <fieldset class='main-container__section'>
             <legend class='main-container__title'>Тип жилья:</legend>
             <p>
               <input class='visually-hidden' id='filter-hotel__item' type='checkbox' name='hotel__item' checked>
               <label class='main-container__label' for='filter-hotel__item'>
-              <svg class='checkbox checkbox__off' width='23' height='23' viewBox='0 0 23 23'>
-              
-              <path fill='#FFFFFF' d='M20 2c.542 0 1 .458 1 1v17c0 .542-.458 1-1 1H3c-.542 0-1-.458-1-1V3c0-.542.458-1 1-1h17m0-2H3C1.35 0 0 1.35 0 3v17c0 1.65 1.35 3 3 3h17c1.65 0 3-1.35 3-3V3c0-1.65-1.35-3-3-3z'/></svg>
-              <svg class='checkbox checkbox__on' width='27' height='23' viewBox='0 0 27 23'>
-              
-              <path fill='#FFFFFF' d='M7.285 7.486l-2.829 2.829 7.783 7.783L26.171 4.166l-2.828-2.829-11.104 11.102z'/><path fill='#FFFFFF' d='M21 20c0 .542-.458 1-1 1H3c-.542 0-1-.458-1-1V3c0-.542.458-1 1-1h16.908L21.493.415A2.96 2.96 0 0 0 20 0H3C1.35 0 0 1.35 0 3v17c0 1.65 1.35 3 3 3h17c1.65 0 3-1.35 3-3v-9.829l-2 2V20z'/></svg>
-              Гостиница</label>
+              <span class='main-container__checkbox-indicator'></span>Гостиница</label>
             </p>
             <p>
               <input class='visually-hidden' id='filter-motel__item' type='checkbox' name='motel__item' checked>
               <label class='main-container__label' for='filter-motel__item'>
-              <svg class='checkbox checkbox__off'  width='23' height='23' viewBox='0 0 23 23'>
-              
-              <path fill='#FFFFFF' d='M20 2c.542 0 1 .458 1 1v17c0 .542-.458 1-1 1H3c-.542 0-1-.458-1-1V3c0-.542.458-1 1-1h17m0-2H3C1.35 0 0 1.35 0 3v17c0 1.65 1.35 3 3 3h17c1.65 0 3-1.35 3-3V3c0-1.65-1.35-3-3-3z'/></svg>
-              <svg class='checkbox checkbox__on' width='27' height='23' viewBox='0 0 27 23'>
-              
-              <path fill='#FFFFFF' d='M7.285 7.486l-2.829 2.829 7.783 7.783L26.171 4.166l-2.828-2.829-11.104 11.102z'/><path fill='#FFFFFF' d='M21 20c0 .542-.458 1-1 1H3c-.542 0-1-.458-1-1V3c0-.542.458-1 1-1h16.908L21.493.415A2.96 2.96 0 0 0 20 0H3C1.35 0 0 1.35 0 3v17c0 1.65 1.35 3 3 3h17c1.65 0 3-1.35 3-3v-9.829l-2 2V20z'/></svg>
-              Мотель</label>
+              <span class='main-container__checkbox-indicator'></span>Мотель</label>
             </p>
             <p>
               <input class='visually-hidden' id='filter-apartments__item' type='checkbox' name='apartments__item' checked>
               <label class='main-container__label' for='filter-apartments__item'>
-              <svg class='checkbox checkbox__off'  width='23' height='23' viewBox='0 0 23 23'>
-              
-              <path fill='#FFFFFF' d='M20 2c.542 0 1 .458 1 1v17c0 .542-.458 1-1 1H3c-.542 0-1-.458-1-1V3c0-.542.458-1 1-1h17m0-2H3C1.35 0 0 1.35 0 3v17c0 1.65 1.35 3 3 3h17c1.65 0 3-1.35 3-3V3c0-1.65-1.35-3-3-3z'/></svg>
-              <svg class='checkbox checkbox__on' width='27' height='23' viewBox='0 0 27 23'>
-              
-              <path fill='#FFFFFF' d='M7.285 7.486l-2.829 2.829 7.783 7.783L26.171 4.166l-2.828-2.829-11.104 11.102z'/><path fill='#FFFFFF' d='M21 20c0 .542-.458 1-1 1H3c-.542 0-1-.458-1-1V3c0-.542.458-1 1-1h16.908L21.493.415A2.96 2.96 0 0 0 20 0H3C1.35 0 0 1.35 0 3v17c0 1.65 1.35 3 3 3h17c1.65 0 3-1.35 3-3v-9.829l-2 2V20z'/></svg>
-              Апартаменты</label>
+              <span class='main-container__checkbox-indicator'></span>Апартаменты</label>
             </p>
          </fieldset>
          
@@ -285,10 +249,8 @@
     </main>
     
     <footer class='footer-page footer-page--search'>
-      <div class='footer-page__container'>
-        <p class='footer-page__reference'>#visitsedona
-        </p>
-      </div> 
+       <p class='footer-page__reference'>#visitsedona
+      </p> 
       
       <div class='socials'>
         <ul class='socials__list'>
