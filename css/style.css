@@ -638,11 +638,25 @@ a {
   cursor: pointer;
 }
 
+.adult__toggle-minus,
+.children__toggle-minus {
+  background-image: url('../img/minus.png');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.adult__toggle-plus,
+.children__toggle-plus {
+  background-image: url('../img/plus.png');
+  background-repeat: no-repeat;
+  background-position: center; 
+}
+
 .adult__toggle-minus:hover,
 .adult__toggle-plus:hover,
 .children__toggle-minus:hover,
 .children__toggle-plus:hover {
-  color: #000000;
+  background-image: #000000;
 }
 
 .adult__toggle-minus:active,
@@ -671,6 +685,10 @@ a {
 .search-hotels__select-button:active {
   background-color: #5496bd;
   color: #88b6d1;
+}
+
+.search-hotels__map {
+  background: url('../img/map.png') no-repeat;
 }
 
 .footer-page__main{
