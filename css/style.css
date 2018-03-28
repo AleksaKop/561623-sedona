@@ -398,6 +398,7 @@ a {
   font-size: 21px;
   line-height: 21px;
   max-width: 33.3%;
+  color: #000000;
   margin-top: 0;
   margin-bottom: 23px;
   display: inline-block;
@@ -435,6 +436,7 @@ a {
 .search-hotels .search-hotels__title {
   font-size: 30px;
   line-height: 36px;
+  color: #000000;
   margin-top: 0;
   margin-bottom: 22px; 
 }
@@ -525,7 +527,7 @@ a {
 
 .search-hotels__item--arrial input,
 .search-hotels__item--departure input {
-  padding-left: 13px;
+  padding-left: 11px;
   padding-top: 13px;
   padding-bottom: 13px;
   padding-right: 40px;
@@ -533,7 +535,7 @@ a {
   color: #000000;
   font-weight: 700;
   text-transform: uppercase;
-  width: 345px;
+  width: 343px;
   height: 38px;
   outline: none;
   cursor: pointer;
@@ -565,7 +567,7 @@ a {
 .search-hotels__item--departure .search-hotels__link-calendar { 
   position: absolute;
   top: 8px;
-  right: 8px;
+  right: 10px;
   width: 21px;
   height: 22px;
 }
@@ -575,7 +577,7 @@ a {
 }
 
 .search-hotels__item--departure .search-hotels__label {
-  margin-right: 17px;
+  margin-right: 16px;
 }
 
 .search-hotels__item--adult .search-hotels__label {
@@ -601,6 +603,7 @@ a {
 .search-hotels__label {
   font-weight: 700; 
   line-height: 26px;
+  color: #000000;
 }
 
 .search-hotels__link-calendar:hover path{
@@ -677,7 +680,7 @@ a {
   background-color: #81b3d2;
   color: #ffffff; 
   padding: 15px;
-  width: 100%;
+  width: 458px;
   border: none;
   cursor: pointer;
  }
@@ -862,6 +865,10 @@ a {
   display: inline-block;
   cursor: pointer;
 } 
+
+.main-container__label:last-of-type {
+  margin-bottom: 0;
+}
 
 .main-container__label span {
   width: 24px;
