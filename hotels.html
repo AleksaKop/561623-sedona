@@ -37,18 +37,18 @@
         <fieldset class='main-container__section'>
             <legend class='main-container__title'>Инфраструктура:</legend>
             <p>
-              <input class='visually-hidden' id='filter-pool__item' type='checkbox' name='pool__item' checked>
-              <label class='main-container__label' for='filter-pool__item'>
+              <input class='visually-hidden' id='filter-pool__item' type='checkbox' name='pool__item' checked disabled>
+              <label class='main-container__label main-container__label--checkbox' for='filter-pool__item'>
               <span class='main-container__checkbox-indicator'></span>Бассейн</label>
             </p>
             <p>
-              <input class='visually-hidden' id='filter-parking__item' type='checkbox' name='parking__item'>
-              <label class='main-container__label' for='filter-parking__item'>
+              <input class='visually-hidden' id='filter-parking__item' type='checkbox' name='parking__item' disabled>
+              <label class='main-container__label main-container__label--checkbox' for='filter-parking__item'>
               <span class='main-container__checkbox-indicator'></span>Парковка</label>
             </p>
             <p>
               <input class='visually-hidden' id='filter-wifi__item' type='checkbox' name='wifi__item'>
-              <label class='main-container__label' for='filter-wifi__item'>
+              <label class='main-container__label main-container__label--checkbox' for='filter-wifi__item'>
               <span class='main-container__checkbox-indicator'></span>Wi Fi</label>
             </p>
          </fieldset>
@@ -57,17 +57,17 @@
             <legend class='main-container__title'>Тип жилья:</legend>
             <p>
               <input class='visually-hidden' id='filter-hotel__item' type='checkbox' name='hotel__item' checked>
-              <label class='main-container__label' for='filter-hotel__item'>
+              <label class='main-container__label main-container__label--checkbox' for='filter-hotel__item'>
               <span class='main-container__checkbox-indicator'></span>Гостиница</label>
             </p>
             <p>
               <input class='visually-hidden' id='filter-motel__item' type='checkbox' name='motel__item' checked>
-              <label class='main-container__label' for='filter-motel__item'>
+              <label class='main-container__label main-container__label--checkbox' for='filter-motel__item'>
               <span class='main-container__checkbox-indicator'></span>Мотель</label>
             </p>
             <p>
               <input class='visually-hidden' id='filter-apartments__item' type='checkbox' name='apartments__item' checked>
-              <label class='main-container__label' for='filter-apartments__item'>
+              <label class='main-container__label main-container__label--checkbox' for='filter-apartments__item'>
               <span class='main-container__checkbox-indicator'></span>Апартаменты</label>
             </p>
          </fieldset>
@@ -96,13 +96,13 @@
     
         <section class='search-result__sort'>
          <div class='search-result__container-sort'>
-          <h2 class='seach-result__caption'>НАЙДЕНО:3</h2>
+          <h2 class='seach-result__caption'>НАЙДЕНО: 3</h2>
           
           <section class='sort'>
             <span class='sort__title'>СОРТИРОВКА:</span>
             <ul class='sort__list'>
               <li class='sort__item'>
-                <a class='sort__link' href='price.html'>ПО ЦЕНЕ</a>
+                <a class='sort__link sort__link--active' href='price.html'>ПО ЦЕНЕ</a>
               </li>
               <li class='sort__item'>
                 <a class='sort__link' href='type.html'>ПО ТИПУ</a>
@@ -110,15 +110,13 @@
               <li class='sort__item'>
                 <a class='sort__link' href='rating.html'>ПО РЕЙТИНГУ</a>
               </li>
-              <li class='sort__item'>
-                <a class='sort__button' href='#' aria-label='Сортировка по возрастанию'>
-                  <svg class='sort__icon-up' width='11' height='10' viewBox='0 0 11 10'><path fill='#cacaca' d='M5.5 0L0 10h11z'/></svg>
-                </a>
-                <a class='sort__button' href='#' aria-label='Сортировка по убыванию'>
-                  <svg class='sort__icon-down' width='11' height='10' viewBox='0 0 11 10'><path fill='#cacaca' d='M5.5 10L0 0h11'/></svg>
-                </a>
-              </li>
             </ul>
+            <a class='sort__button sort__button ' href='#' aria-label='Сортировка по возрастанию'>
+                  <svg class='sort__icon-up' width='11' height='10' viewBox='0 0 11 10'><path fill='#cacaca' d='M5.5 0L0 10h11z'/></svg>
+            </a>
+            <a class='sort__button sort__button--active' href='#' aria-label='Сортировка по убыванию'>
+                  <svg class='sort__icon-down' width='11' height='10' viewBox='0 0 11 10'><path fill='#cacaca' d='M5.5 10L0 0h11'/></svg>
+            </a>
           </section>
          </div>
                   
@@ -164,7 +162,7 @@
                     <path fill='#81B3D2' d='M9.002 0l2.126 6.494h6.877l-5.564 4.012L14.566 17l-5.564-4.013L3.438 17l2.126-6.494L0 6.494h6.878z'/></svg>
                     </li>   
                   </ul>
-                  <span class='search-result__rating-total'>Рейтинг:8,5</span>
+                  <span class='search-result__rating-total'>Рейтинг: 8,5</span>
                 </div>
               </article>
               
@@ -204,7 +202,7 @@
                     <path fill='#81B3D2' d='M9.002 0l2.126 6.494h6.877l-5.564 4.012L14.566 17l-5.564-4.013L3.438 17l2.126-6.494L0 6.494h6.878z'/></svg>
                     </li> 
                   </ul>   
-                  <span class='search-result__rating-total'>Рейтинг:8,9</span> 
+                  <span class='search-result__rating-total'>Рейтинг: 8,9</span> 
                 </div>      
               </article>
         
@@ -239,7 +237,7 @@
                     <path fill='#81B3D2' d='M9.002 0l2.126 6.494h6.877l-5.564 4.012L14.566 17l-5.564-4.013L3.438 17l2.126-6.494L0 6.494h6.878z'/></svg>
                     </li> 
                   </ul>   
-                  <span class='search-result__rating-total'>Рейтинг:9,2</span>
+                  <span class='search-result__rating-total'>Рейтинг: 9,2</span>
                 </div>
               </article>
             </li>
