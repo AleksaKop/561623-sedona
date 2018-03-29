@@ -42,56 +42,56 @@
         <p class='main-page__slogan-text'>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
       </section>
       
-      <section class='feature'>
+      <section class='features'>
         <h2 class='visually-hidden'>Преимущества</h2>
-        <ul class='feature__list'>
-          <li class='feature__item'>
-            <div class='feature__info feature__info--sity'>
-              <h3 class='feature__title'>Настоящий городок</h3>
-              <span class='feature__number'>— №1 —</span>
-              <p class='feature__cause'>Седона — не аттракцион для туристов, там течет своя жизнь</p>
+        <ul class='features__list'>
+          <li class='features__item'>
+            <div class='features__info features__info--sity'>
+              <h3 class='features__title'>Настоящий городок</h3>
+              <span class='features__number'>— №1 —</span>
+              <p class='features__cause'>Седона — не аттракцион для туристов, там течет своя жизнь</p>
             </div>
-              <figure class='feature__pic'>
+              <figure class='features__pic'>
                 <img src='img/main_photo1.jpg' width='800' height='400' alt='Изображение города'>
               </figure>
-              <ul class='feature__detail-list'>
-                <li class='feature__detail-item feature__detail-item--house'>
-                  <h4 class='feature__detail-title'>Жилье</h4>
-                  <p class='feature__detail-cause'>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+              <ul class='features__detail-list'>
+                <li class='features__detail-item features__detail-item--house'>
+                  <h4 class='features__detail-title'>Жилье</h4>
+                  <p class='features__detail-cause'>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
                 </li>
-                <li class='feature__detail-item feature__detail-item--food'>
-                  <h4 class='feature__detail-title'>Еда</h4>
-                  <p class='feature__detail-cause'>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+                <li class='features__detail-item features__detail-item--food'>
+                  <h4 class='features__detail-title'>Еда</h4>
+                  <p class='features__detail-cause'>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
                 </li>
-                <li class='feature__detail-item feature__detail-item--souvenirs'>
-                  <h4 class='feature__detail-title'>Сувениры</h4>
-                  <p class='feature__detail-cause'>Не только китайского, но и местного производства!</p>
+                <li class='features__detail-item features__detail-item--souvenirs'>
+                  <h4 class='features__detail-title'>Сувениры</h4>
+                  <p class='features__detail-cause'>Не только китайского, но и местного производства!</p>
                 </li>
               </ul>
-            <li class='feature__item'>
-              <figure class='feature__pic'>
+            <li class='features__item'>
+              <figure class='features__pic'>
                 <img src='img/main_photo2.jpg' alt='Мост дьявола'>    
               </figure>  
-             <div class='feature__info feature__info--bridge'>
-              <h3 class='feature__title'>Там есть <br> мост дьявола</h3>
-              <span class='feature__number'>— №2 —</span>
-              <p class='feature__cause'>Да, по нему можно пройти! Если, конечно, вы осмелитесь</p>
+             <div class='features__info features__info--bridge'>
+              <h3 class='features__title'>Там есть <br> мост дьявола</h3>
+              <span class='features__number'>— №2 —</span>
+              <p class='features__cause'>Да, по нему можно пройти! Если, конечно, вы осмелитесь</p>
              </div>
             </li> 
-              <li class='feature__item feature__item--space'>
-              <h3 class='feature__title'>Небольшая площадь</h3>
-              <span class='feature__number'>— №3 —</span>
-              <p class='feature__cause'>Все достопримечательности находятся очень близко</p>
+              <li class='features__item features__item--space'>
+              <h3 class='features__title'>Небольшая площадь</h3>
+              <span class='features__number'>— №3 —</span>
+              <p class='features__cause'>Все достопримечательности находятся очень близко</p>
             </li>
-            <li class='feature__item feature__item--road'>
-              <h3 class='feature__title'>Красивая дорога</h3>
-              <span class='feature__number'>— №4 —</span>
-              <p class='feature__cause'>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+            <li class='features__item features__item--road'>
+              <h3 class='features__title'>Красивая дорога</h3>
+              <span class='features__number'>— №4 —</span>
+              <p class='features__cause'>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
             </li>
-            <li class='feature__item feature__item--tourist'>
-              <h3 class='feature__title'>Мало туристов</h3>
-              <span class='feature__number'>— №5 —</span>
-              <p class='feature__cause'>Большинство едет в Гранд Каньон и толпится там</p>
+            <li class='features__item features__item--tourist'>
+              <h3 class='features__title'>Мало туристов</h3>
+              <span class='features__number'>— №5 —</span>
+              <p class='features__cause'>Большинство едет в Гранд Каньон и толпится там</p>
             </li>
           </ul>
         </section>
@@ -108,35 +108,27 @@
                 <div class='search-hotels__item search-hotels__item--arrial'>
                   <label class='search-hotels__label' for='filter-arrial__date'> Дата заезда:</label>
                   <input id='filter-arrial__date' type='text' name='arrial__date' placeholder='24 апреля 2017'>
-                  <a class='search-hotels__link-calendar' href='#calendar1.html'>
-                  <svg class='search-hotels__calendar' width='21' height='22' viewBox='0 0 21 22'>
-              
-                <path fill='#cacaca' d='M19.251 2.025h-2.845V.648c0-.381-.294-.689-.656-.689-.363 0-.656.308-.656.689v1.377h-3.938V.648c0-.381-.294-.689-.655-.689-.363 0-.657.308-.657.689v1.377H5.906V.648c0-.381-.294-.689-.656-.689-.363 0-.657.308-.657.689v1.377H1.75C.784 2.025 0 2.847 0 3.862v16.302C0 21.179.784 22 1.75 22h17.501c.966 0 1.749-.821 1.749-1.836V3.862c0-1.015-.783-1.837-1.749-1.837zm.437 18.139a.448.448 0 0 1-.437.459H1.75a.45.45 0 0 1-.438-.459V3.862a.45.45 0 0 1 .438-.459h2.844v1.378c0 .381.294.689.657.689.362 0 .656-.308.656-.689V3.403h3.938v1.378c0 .381.294.689.657.689.361 0 .655-.308.655-.689V3.403h3.938v1.378c0 .381.293.689.656.689.362 0 .656-.308.656-.689V3.403h2.845c.241 0 .437.206.437.459v16.302z'/>
-                <path fill='#cacaca' d='M4.594 8.225h2.625v2.066H4.594zM4.594 11.668h2.625v2.067H4.594zM4.594 15.112h2.625v2.066H4.594zM9.188 15.112h2.625v2.066H9.188zM9.188 11.668h2.625v2.067H9.188zM9.188 8.225h2.625v2.066H9.188zM13.781 15.112h2.625v2.066h-2.625zM13.781 11.668h2.625v2.067h-2.625zM13.781 8.225h2.625v2.066h-2.625z'/></svg>
-                  </a>
+                  <button class='search-hotels__calendar' type='button' aria-label='Календарь'>
+                  </button>
                 </div>
                 <div class='search-hotels__item search-hotels__item--departure'>
                   <label class='search-hotels__label' for='filter-departure__date'> Дата выезда:</label>
                   <input id='filter-departure__date' type='text' name='departure__date' placeholder='4 июля 2017'>
-                  <a class='search-hotels__link-calendar' href='#calendar2.html'>
-                    <svg class='search-hotels__calendar' width='21' height='22' viewBox='0 0 21 22'>
-              
-              <path fill='#cacaca' d='M19.251 2.025h-2.845V.648c0-.381-.294-.689-.656-.689-.363 0-.656.308-.656.689v1.377h-3.938V.648c0-.381-.294-.689-.655-.689-.363 0-.657.308-.657.689v1.377H5.906V.648c0-.381-.294-.689-.656-.689-.363 0-.657.308-.657.689v1.377H1.75C.784 2.025 0 2.847 0 3.862v16.302C0 21.179.784 22 1.75 22h17.501c.966 0 1.749-.821 1.749-1.836V3.862c0-1.015-.783-1.837-1.749-1.837zm.437 18.139a.448.448 0 0 1-.437.459H1.75a.45.45 0 0 1-.438-.459V3.862a.45.45 0 0 1 .438-.459h2.844v1.378c0 .381.294.689.657.689.362 0 .656-.308.656-.689V3.403h3.938v1.378c0 .381.294.689.657.689.361 0 .655-.308.655-.689V3.403h3.938v1.378c0 .381.293.689.656.689.362 0 .656-.308.656-.689V3.403h2.845c.241 0 .437.206.437.459v16.302z'/>
-              <path fill='#cacaca' d='M4.594 8.225h2.625v2.066H4.594zM4.594 11.668h2.625v2.067H4.594zM4.594 15.112h2.625v2.066H4.594zM9.188 15.112h2.625v2.066H9.188zM9.188 11.668h2.625v2.067H9.188zM9.188 8.225h2.625v2.066H9.188zM13.781 15.112h2.625v2.066h-2.625zM13.781 11.668h2.625v2.067h-2.625zM13.781 8.225h2.625v2.066h-2.625z'/></svg>
-                  </a> 
+                  <button class='search-hotels__calendar' type='button' aria-label='Календарь'>
+                  </button> 
                 </div>
                 <div class='search-hotels__container'>
                   <div class='search-hotels__item search-hotels__item--adult'>
                     <label class='search-hotels__label' for='filter-adult__amount'> Взрослые:</label>
-                    <button class='adult__toggle-minus' type='button' aria-label='Меньше'></button>
+                    <button class='search-hotels__toggle search-hotels__toggle--minus' type='button' aria-label='Меньше'></button>
                     <input id='filter-adult__amount' type='text' name='adult__amount' placeholder='2'>
-                    <button class='adult__toggle-plus' type='button' aria-label='Больше'></button>
+                    <button class='search-hotels__toggle search-hotels__toggle--plus' type='button' aria-label='Больше'></button>
                   </div>
                   <div class='search-hotels__item search-hotels__item--children'>
                     <label class='search-hotels__label' for='filter-children__amount'> Дети:</label> 
-                    <button class='children__toggle-minus' type='button' aria-label='Меньше'></button>
+                    <button class='search-hotels__toggle search-hotels__toggle--minus' type='button' aria-label='Меньше'></button>
                     <input id='filter-children__amount' type='text' name='children__amount' placeholder='0'>
-                    <button class='children__toggle-plus' type='button' aria-label='Больше'></button>
+                    <button class='search-hotels__toggle search-hotels__toggle--plus' type='button' aria-label='Больше'></button>
                    </div>
                  </div>
                  <div class='search-hotels__item'>
