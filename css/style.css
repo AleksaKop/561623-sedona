@@ -1186,7 +1186,6 @@ a {
 }
 
 .search-result__rating-list {
-  margin; 0;
   padding: 0;
   display: flex;
   justify-content: flex-end;
