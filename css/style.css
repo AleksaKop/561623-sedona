@@ -873,7 +873,7 @@ a {
   top: 50%;
   margin-top: -12px;
   left: 0;
-  background-size:cover;
+  background-size: 24px;
 }
 
 .main-container__section input[type='checkbox']:checked + .main-container__label span {
@@ -1189,7 +1189,7 @@ a {
 }
 
 .search-result__rating-list {
-  padding-top: 2px;
+  margin-top: 2px;
   padding-left: 0;
   display: flex;
   justify-content: flex-end;
