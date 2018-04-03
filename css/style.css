@@ -495,6 +495,10 @@ a {
   display: none;
 }
 
+.search-hotels__section--active {
+  display: flex;
+}
+
 .js-search-hotels__section {
   display: flex;
   animation-name: emerge;
@@ -1119,7 +1123,7 @@ a {
 
 .sort-down--active path {
   fill: #81b3d2;
- }
+}
 
 .sort-down--active {
   margin-left: 11px;
@@ -1160,6 +1164,7 @@ a {
   padding-bottom: 32px;
   padding-top: 26px;
 }
+
 .search-result__pic {
   display: flex;
   flex-wrap: wrap;

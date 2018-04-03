@@ -1,3 +1,4 @@
+var active = document.querySelector('.search-hotels__section--active')
 var button = document.querySelector('.search-hotels__button')
 var data = document.querySelector('.search-hotels__section')
 var date_arrial = data.querySelector('[name=arrial__date]')
@@ -6,6 +7,8 @@ var amount_adult = data.querySelector('[name=adult__amount]')
 var amount_children = data.querySelector('[name=children__amount]')
 var form = document.querySelector('.search-hotels__form')
       
+active.classList.remove('search-hotels__section--active');
+
 button.addEventListener('click', function (evt) {
   evt.preventDefault();
   data.classList.toggle('js-search-hotels__section');
