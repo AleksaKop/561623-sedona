@@ -103,7 +103,7 @@ a {
 }
 
 .main-section {
-  background-image: #86b5cf;
+  background-color: #ddebf4;
   background-image: url('../img/backgroundphoto.jpg');
   background-position:  50% -56px;
   background-repeat: no-repeat;
@@ -490,9 +490,20 @@ a {
   padding-right: 55px;
   padding-bottom: 57px;
   padding-top: 53px;
-  display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+  display: none;
+}
+
+.js-search-hotels__section {
+  display: flex;
+  animation-name: emerge;
+  animation-duration: 2s;
+ }
+
+@keyframes emerge {
+  from {transform: translate(0);
+        opacity: 0;}
 }
 
 .search-hotels img {
@@ -697,9 +708,11 @@ a {
 
 .map {
   padding-top: 593px;
+  background-color: #cbdda9;
   background-image: url('../img/map.png');
   background-repeat: no-repeat;
   background-position: center;
+  width: 100%;
 }
 
 .footer-page__main{
@@ -807,7 +820,7 @@ a {
 
 .main-container__form {
   color: #ffffff;
-  background-color: #f2f2f2;
+  background-color: #ddebf4;
   background-image: url('../img/backgroundphoto2.jpg');
   background-position: center center;
   background-repeat: no-repeat;
