@@ -507,7 +507,8 @@ a {
 
 @keyframes emerge {
   from {transform: translate(0);
-        opacity: 0;}
+        opacity: 0;
+  }
 }
 
 .search-hotels img {
